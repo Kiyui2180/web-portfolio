@@ -1,0 +1,28 @@
+/* 
+    These are custom styles I use for repeating blocks of codes and 
+    to lessen the amount of scrolling up and down.
+*/
+
+/* Used to center the div itself in a container.  */
+.center-this-div {
+    margin: 0px auto;
+}
+
+/* Used to center the  elements inside a div or container. */
+.center-elements-inside {
+    display: grid;
+    place-items: center;
+}
+
+/* Used to add border radius and its default color. */
+.add-border-radius-with-bg {
+    border-radius: 40px;
+    background-color: rgb(22, 22, 22);
+}
+
+/* Used for absolutely placing a div in the center. */
+.center-this-div-absolutely {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}

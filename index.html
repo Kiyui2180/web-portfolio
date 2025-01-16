@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="styles/init-styles.css">
+        <link rel="stylesheet" href="styles/navigation-bar-styles.css">
+        <link rel="stylesheet" href="styles/init-tiles-styles.css">
+        <link rel="stylesheet" href="styles/tiles-styles.css">
+        <link rel="stylesheet" href="styles/init-expanded-tile.css">
+        <link rel="stylesheet" href="styles/custom-styles.css">
+        <link rel="stylesheet" href="styles/animations.css">
+
+        <!-- scripts -->
+        <script type="text/javascript" src="scripts/script.js"></script>
+        <script type="text/javascript" src="scripts/KiyuiLibrary.js"></script>
+        <script type="text/javascript" src="scripts/ExpandedTilesContents.js"></script>
+
+        <title>Euge Kyle: Creativity and Technology</title>
+
+
+    </head>
+    <body>
+        <main>
+            <!-- 
+                navigation bar
+            -->
+            <nav class="add-border-radius-with-bg nav-bar" id="nav-bar">
+                <a href="">Home</a>
+                <a href="">Projects</a>
+                <a href="">Contact</a>
+            </nav>
+            
+            <section class="tiles center-this-div">
+                <!-- 
+                tiles
+                -->
+                <div class="about-me-div add-border-radius-with-bg" id="about-me-div" onclick="SelectAboutMeDiv()">
+                    <div>
+                        <h3>Who am I?</h3>
+                        <p>
+                            Hi! I’m Euge Kyle Fabella, a passionate IT student currently pursuing a Bachelor of Science in Information Technology at 
+                            STI Colleges of Santa Rosa City. I have a growing interest in IT support, system administration, and development, and 
+                            I am eager to expand my knowledge and skills in these areas. With a strong dedication to learning and problem-solving, 
+                            I’m excited to explore the world of technology and contribute to meaningful solutions in the future.
+                        </p>
+                    </div>
+                </div>
+
+                <!--
+                    picture-div
+                -->
+                <div class="picture-div center-elements-inside add-border-radius-with-bg" id="picture-div" onclick="SelectPictureDiv()">
+                    <img src="resources/picture-of-me.jpg" alt="picture-of-me">
+                </div>
+
+                <!-- 
+                    certificates-div
+                -->
+                <div class="certificates-div center-elements-inside add-border-radius-with-bg" id="certificates-div" onclick="SelectCertificatesDiv()">
+                    <h2>Certificates</h2>
+                </div>
+
+                <!-- 
+                    username-and-picture-div
+                -->
+                <div class="username-and-picture-div center-elements-inside add-border-radius-with-bg" id="username-and-picture-div" onclick="SelectUserNameAndPictureDiv()">
+                    <div>
+                        <img src="https://avatars.githubusercontent.com/u/66368460?s=400&u=4076b4e18dbf7ca2ccdb17f1ca79cc2b0a90eff8&v=4" 
+                        alt="internet-picture" id="online-picture">
+                        <h2>Euge Kyle Fabella</h2>
+                        <div class="social-links">
+                            <a href="https://github.com/Kiyui2180">
+                                <img src="resources/github-logo.png" alt="github-logo">
+                            </a>
+                            <a href="#">
+                                <img src="resources/linkedin-icon.png" alt="linkedin-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 
+                    quote-div
+                -->
+                <div class="quote-div center-elements-inside add-border-radius-with-bg" id="quote-div">
+                    <h3>
+                        "The only way to do great work is to love what you do."
+                        <br>
+                        — Steve Jobs
+                    </h3>
+                </div>
+
+                <!-- 
+                    tech-stack-div
+                -->
+                <div class="tech-stack-div add-border-radius-with-bg" id="tech-stack-div" onclick="SelectTechStackDiv()">
+                    <h2>
+                        Tech Stack
+                    </h2>
+                    <div class="tech-stack-imgs-div">
+                        <img src="resources/Programming Languages and Database/java-icon.png" alt="java-icon">
+                        <img src="resources/Programming Languages and Database/c-sharp-icon.png" alt="c-sharp-icon">
+                        <img src="resources/Programming Languages and Database/python-icon.png" alt="python-icon">
+                        <img src="resources/Web Systems and Technologies/html.png" alt="html-icon">
+                        <img src="resources/Web Systems and Technologies/css-icon.icon" alt="css-icon">
+                        <img src="resources/Web Systems and Technologies/js-icon.png" alt="js-icon">
+                        <!-- add sql, mongodb, cisco, archimate, android studio,
+                        figma -->
+                    </div>
+                </div>
+
+                <!-- 
+                    skills-div
+                -->
+                <div class="skills-div add-border-radius-with-bg" id="skills-div" onclick="SelectSkillsDiv()">
+                    <h2>
+                        Skills
+                    </h2>
+                    <div class="skills-imgs-div">
+                        <img src="resources/Skills/critical thinking.png" alt="technical-skills-icon">
+                    </div>
+                </div>
+
+                <!-- 
+                    more-div
+                -->
+                <div class="more-div center-elements-inside add-border-radius-with-bg" id="more-div">
+                    <h2>
+                        More
+                    </h2>
+                </div>
+
+                <!-- 
+                    education-div
+                -->
+                <div class="education-div center-elements-inside add-border-radius-with-bg" id="education-div" onclick="SelectEducationDiv()">
+                    <h2>
+                        Education
+                    </h2>
+                </div>
+
+                <!-- 
+                    professional-references-div
+                -->
+                <div class="professional-references-div center-elements-inside add-border-radius-with-bg" id="professional-references-div" onclick="SelectProfessionalReferencesDiv()">
+                    <h3>
+                        Professional References
+                    </h3>
+                </div>
+            </section>
+        </main>
+
+        <!-- Below is the div for the tiles to use to present its content. -->
+        <div class="expand-tile add-border-radius-with-bg center-this-div-absolutely" id="expand-tile">
+            
+        </div>
+
+        <!-- Below are the buttons used for navigating the webpage. -->
+        <!-- 
+            Before pushing, make sure to go to [init-expanded-tile.css] and modify the following settings:
+            .expand-tile {
+                ...
+                opacity: 0;
+                pointer-events: none;
+                ...
+            }
+            Change this whenever you're debugging the expanding tile to 1 and all respectively.
+
+        -->
+    </body>
+</html>

@@ -1,0 +1,21 @@
+
+/* 
+    navigation bar
+*/
+nav {
+    /* centering the alignment of the nav bar's links */
+    text-align: center;
+
+    /* centering the nav bar */
+    margin: 1% auto;
+    /* putting spaces in the nav bar so it won't be thin */
+    padding: 0.5%;
+    /* the nav bar's width so it won't be edge to edge in the screen */
+    width: 15%;
+}
+nav a {
+    /* since <a> is different from other text attributes, it is configured already */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0% 5%; /* added spaces between each link */
+}

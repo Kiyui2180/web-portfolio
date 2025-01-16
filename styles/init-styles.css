@@ -1,0 +1,24 @@
+/* 
+    This stylesheet is for initiating the webpage's styles.
+    Reducing scrolling and separating the "cold" block of codes.
+*/
+
+/* Configuring the default font of the webpage. */
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../resources/Poppins-Font/Poppins-Regular.ttf);
+}
+
+/* Initializing the webpage's body. */
+body {
+    /* bg color, initiating the font and its color, and 
+    animation for visiting the webpage for the first time. */
+    background-color: rgb(0, 0, 0);
+    font-family: Poppins-Regular, Arial, Helvetica, sans-serif;
+    color: white;
+    animation: page-load-fadein 0.5s ease-in-out;
+
+    /* Disabled scroll and added 200 height for the whole webpage. */
+    overflow: auto;
+    height: 100vh;
+}

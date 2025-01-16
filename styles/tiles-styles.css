@@ -1,0 +1,140 @@
+/* 
+    This stylesheet is if for the configuration of the elements inside the div.
+    Seperating the init-tiles-styles.css and tiles-styles.css.
+    Reducing scroll times and promoting seperation of concerns.
+*/
+
+/* 
+    about-me-div
+*/
+.about-me-div {
+    /* Added padding so the text inside aren't cramped. */
+    padding: 0px 20px; 
+
+    cursor: pointer;
+}
+
+/* 
+picture-div
+*/
+.picture-div {
+    cursor: pointer;
+}
+.picture-div img {
+    /* Configuring the placement and cropping the picture. */
+    height: 35vh;
+    width: 35vh;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*
+    certificates-div
+*/
+.certificates-div {
+    text-align: center;
+
+    cursor: pointer;
+
+    /* Added [!important] as I want it to prioritize this color from the 
+    default configuration of [.add-border-radius-with-bg] from custom-styles.css. */
+    background-color: rgb(27, 70, 95) !important;
+}
+
+/* 
+    username-and-picture-div
+*/
+.username-and-picture-div {
+    text-align: center;
+
+    cursor: pointer;
+}
+#online-picture {
+    /* Cropped my online picture's size and cropped it to circle. */
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+}
+.social-links img {
+    /* Cropped the social media platforms' icons and configured its cursor to hand pointer. */
+    height: 50px;
+    width: 50px;
+    cursor: pointer; 
+}
+.social-links a {
+    /* Removed the <a>'s default appearance and turned it invisible. */
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0);
+}
+
+/* 
+    quote-div
+*/
+.quote-div {
+    padding: 25px;
+
+    /* Added [!important] as I want it to prioritize this color from the 
+    default configuration of [.add-border-radius-with-bg] from custom-styles.css. */
+    background-color: rgb(27, 70, 95) !important;
+}
+
+/* 
+    tech-stack-div
+*/
+.tech-stack-div {
+    padding: 0px 20px;
+
+    cursor: pointer;
+}
+.tech-stack-div img {
+    height: 60px;
+    width: 60px;
+
+}
+.tech-stack-imgs-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+/* 
+    skills-div
+*/
+.skills-div {
+    cursor: pointer;
+
+    padding: 0px 20px;
+}
+.skills-imgs-div img{
+    height: 60px;
+    width: 60px;
+}
+
+/* 
+    more-div
+*/
+.more-div {
+    text-align: center;
+
+    background-color: rgb(27, 70, 95) !important;
+}
+
+/*  
+    educaton-div
+*/
+.education-div {
+    text-align: center;
+
+    cursor: pointer;
+}
+
+/* 
+    professional-references-div
+*/
+.professional-references-div {
+    text-align: center;
+
+    cursor: pointer;
+}

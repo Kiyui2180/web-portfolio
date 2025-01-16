@@ -1,0 +1,114 @@
+/* 
+    This stylesheet is the initialization of the tiles.
+*/
+
+/* 
+    tiles [section class="tiles"]. The container for the tiles itself.
+*/
+.tiles {
+    /* Placement of the tiles inside the tiles container (div). */
+    display: grid;
+    grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+        "about-me-box about-me-box about-me-box about-me-box picture-box picture-box"
+        "certificates-box certificates-box username-and-picture-box username-and-picture-box picture-box picture-box"
+        "tech-stack-box skills-box username-and-picture-box username-and-picture-box quote-box quote-box"
+        "tech-stack-box skills-box more-box education-box education-box professional-references-box"
+    ;
+
+    /* I don't know why I used [em] unit but since it's a legacy code and 
+    I forgot, I just left it there. */
+    gap: 1em;
+
+    /* To prevent the elements inside the container to shift to the right side as it
+    is aligned to the upper left */
+    justify-content: center; 
+
+    /* height and width of this div */
+    height: 75%;
+    width: 60%;
+}
+
+/* 
+    about-me-div
+*/
+.about-me-div{
+    grid-area: about-me-box;
+}
+
+/* 
+    picture-div
+*/
+.picture-div {
+    grid-area: picture-box;
+
+    padding: 40px 0px;
+}
+
+/* 
+    certificates-div
+*/
+.certificates-div {
+    grid-area: certificates-box;
+
+    padding: 40px 0px;
+}
+
+/* 
+    username-and-picture-div
+*/
+.username-and-picture-div {
+    grid-area: username-and-picture-box;
+
+    padding: 40px 0px;
+}
+
+/* 
+    quote-div
+*/
+.quote-div {
+    grid-area: quote-box;
+}
+
+/* 
+    tech-stack-div
+*/
+.tech-stack-div {
+    grid-area: tech-stack-box;
+}
+
+
+/* 
+    skills-div
+*/
+.skills-div {
+    grid-area: skills-box;
+}
+
+/* 
+    more-div
+*/
+.more-div {
+    grid-area: more-box;
+
+    padding: 40px 0px;
+}
+
+/* 
+    education-div
+*/
+.education-div {
+    grid-area: education-box;
+
+    padding: 40px 0px;
+}
+
+/* 
+    professional-references-div
+*/
+.professional-references-div {
+    grid-area: professional-references-box;
+
+    padding: 40px 0px;
+}
