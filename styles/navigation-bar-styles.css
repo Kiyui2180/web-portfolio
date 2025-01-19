@@ -11,7 +11,8 @@ nav {
     /* putting spaces in the nav bar so it won't be thin */
     padding: 0.5%;
     /* the nav bar's width so it won't be edge to edge in the screen */
-    width: 15%;
+    /* Using [em] unit for dynamic shape and size of the nav bar. */
+    width: 20em;
 }
 nav a {
     /* since <a> is different from other text attributes, it is configured already */

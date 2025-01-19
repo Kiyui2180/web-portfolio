@@ -1,7 +1,7 @@
 // Script for the webpage's tile expand and contents.
 
 // Load upon start of web portfolio.
-alert("Web Portfolio is still under development, expect some unoptimized screen sizes, thank you for your patience! Click [OK] to continue.\n— Euge Kyle");
+alert("Web Portfolio is still under development, expect some unoptimized screen sizes and missing contents, thank you for your patience! Click [OK] to view page anyway.\n— Euge Kyle");
 
 
 // init variables 
@@ -93,6 +93,7 @@ function SelectProfessionalReferencesDiv()
 
     document.getElementById("expand-tile").innerHTML = "";
 }
+
 
 
 
@@ -245,7 +246,7 @@ function UndoNavBar()
         `
             <style>
             #nav-bar {
-                width: 15%;
+                width: 20em;
                 cursor: default;
                 pointer-events: none; 
             } 

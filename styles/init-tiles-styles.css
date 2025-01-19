@@ -17,7 +17,7 @@
         "tech-stack-box skills-box more-box education-box education-box professional-references-box"
     ;
 
-    /* I don't know why I used [em] unit but since it's a legacy code and 
+    /* I don't know why I used [rem] unit but since it's a legacy code and 
     I forgot, I just left it there. */
     gap: 1em;
 
@@ -26,14 +26,14 @@
     justify-content: center; 
 
     /* height and width of this div */
-    height: 75%;
-    width: 60%;
+    height: 45em;
+    width: 70em;
 }
 
 /* 
     about-me-div
 */
-.about-me-div{
+.about-me-div {
     grid-area: about-me-box;
 }
 
@@ -42,8 +42,6 @@
 */
 .picture-div {
     grid-area: picture-box;
-
-    padding: 40px 0px;
 }
 
 /* 
@@ -51,8 +49,6 @@
 */
 .certificates-div {
     grid-area: certificates-box;
-
-    padding: 40px 0px;
 }
 
 /* 
@@ -60,8 +56,6 @@
 */
 .username-and-picture-div {
     grid-area: username-and-picture-box;
-
-    padding: 40px 0px;
 }
 
 /* 
@@ -91,8 +85,6 @@
 */
 .more-div {
     grid-area: more-box;
-
-    padding: 40px 0px;
 }
 
 /* 
@@ -100,8 +92,6 @@
 */
 .education-div {
     grid-area: education-box;
-
-    padding: 40px 0px;
 }
 
 /* 
@@ -109,6 +99,4 @@
 */
 .professional-references-div {
     grid-area: professional-references-box;
-
-    padding: 40px 0px;
 }

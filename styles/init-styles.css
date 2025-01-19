@@ -1,5 +1,5 @@
 /* 
-    This stylesheet is for initiating the webpage's styles.
+    This stylesheet is for initiating the webpage's styles, hence the [init-styles.css] name.
     Reducing scrolling and separating the "cold" block of codes.
 */
 
@@ -15,10 +15,17 @@ body {
     animation for visiting the webpage for the first time. */
     background-color: rgb(0, 0, 0);
     font-family: Poppins-Regular, Arial, Helvetica, sans-serif;
+    /* Main font color of the whole webpage. */
     color: white;
+    /* Animation whenever the site is visited. */
     animation: page-load-fadein 0.5s ease-in-out;
+    
+    /* Main font size of the webpage. */
+    font-size: 1rem;
 
-    /* Disabled scroll and added 200 height for the whole webpage. */
-    overflow: auto;
-    height: 100vh;
+    /* Get back on this one, this is the whole body of the webpage, make sure it's 
+        responsive. It's all in auto for now. */
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh
 }

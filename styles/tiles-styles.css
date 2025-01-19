@@ -8,8 +8,8 @@
     about-me-div
 */
 .about-me-div {
-    /* Added padding so the text inside aren't cramped. */
-    padding: 0px 20px; 
+    /* Added padding so the text inside aren't horizontally cramped. */
+    padding: 0rem 2rem; 
 
     cursor: pointer;
 }
@@ -21,12 +21,12 @@ picture-div
     cursor: pointer;
 }
 .picture-div img {
-    /* Configuring the placement and cropping the picture. */
-    height: 35vh;
-    width: 35vh;
-    border-radius: 10px;
+    /* Configuring the border radius, size and cropping the picture. */
+    height: 20em;
+    width: 20em;
+    border-radius: 40px;
     object-fit: cover;
-    object-position: center;
+    
 }
 
 /*
@@ -51,15 +51,15 @@ picture-div
     cursor: pointer;
 }
 #online-picture {
-    /* Cropped my online picture's size and cropped it to circle. */
-    height: 125px;
-    width: 125px;
+    /* Configured my online picture's size and cropped it to circle. */
+    height: 8em;
+    width: 8em;
     border-radius: 50%;
 }
 .social-links img {
     /* Cropped the social media platforms' icons and configured its cursor to hand pointer. */
-    height: 50px;
-    width: 50px;
+    height: 3em;
+    width: 3em;
     cursor: pointer; 
 }
 .social-links a {
@@ -72,7 +72,7 @@ picture-div
     quote-div
 */
 .quote-div {
-    padding: 25px;
+    padding: 0rem 2rem;
 
     /* Added [!important] as I want it to prioritize this color from the 
     default configuration of [.add-border-radius-with-bg] from custom-styles.css. */
@@ -83,13 +83,13 @@ picture-div
     tech-stack-div
 */
 .tech-stack-div {
-    padding: 0px 20px;
+    text-align: center;
 
     cursor: pointer;
 }
 .tech-stack-div img {
-    height: 60px;
-    width: 60px;
+    height: 4em;
+    width: 4em;
 
 }
 .tech-stack-imgs-div {
@@ -105,11 +105,11 @@ picture-div
 .skills-div {
     cursor: pointer;
 
-    padding: 0px 20px;
+    text-align: center;
 }
 .skills-imgs-div img{
-    height: 60px;
-    width: 60px;
+    height: 4em;
+    width: 4em;
 }
 
 /* 

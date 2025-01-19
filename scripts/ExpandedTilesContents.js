@@ -123,7 +123,7 @@ const certificatesDivContent =
         }
 
         .column1 img, .column2 img {
-            width: 500px;
+            width: 31em;
             height: 100%;
 
             /* 
