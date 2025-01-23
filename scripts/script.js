@@ -1,7 +1,7 @@
 // Script for the webpage's tile expand and contents.
 
 // Load upon start of web portfolio.
-alert("Web Portfolio is still under development, expect some unoptimized screen sizes and missing contents, thank you for your patience! Click [OK] to view page anyway.\n— Euge Kyle");
+// alert("Web Portfolio is still under development, expect some unoptimized screen sizes and missing contents, thank you for your patience! Click [OK] to view page anyway.\n— Euge Kyle");
 
 
 // init variables 

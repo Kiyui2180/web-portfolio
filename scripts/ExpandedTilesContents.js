@@ -6,7 +6,7 @@ const aboutMeDivContent =
     </h1>
     <p>
         Hi! I’m Euge Kyle Fabella, a passionate IT student currently pursuing a Bachelor of Science in Information Technology at 
-        STI Colleges of Santa Rosa City. I have a growing interest in IT support, system administration, and development, and 
+        STI Colleges of Santa Rosa City. I have a growing interest in system administration, network technologies, and development, and 
         I am eager to expand my knowledge and skills in these areas. With a strong dedication to learning and problem-solving, 
         I’m excited to explore the world of technology and contribute to meaningful solutions in the future.
     </p>
@@ -83,12 +83,13 @@ const pictureDivContent =
 // Recheck this one.
 const certificatesDivContent =
 `
+    <!-- Go back here and recheck, don't like how it resizes. [verify] -->
     <h1 class="center-elements-inside">
         Certifcates
     </h1>
 
     <div class="container">
-        <div class="column1 center-elements-inside">
+        <div class="sub-container center-elements-inside">
             <h2>
                 System Administration
             </h2>
@@ -96,7 +97,7 @@ const certificatesDivContent =
             alt="system-administration-img">
         </div>
 
-        <div class="column2 center-elements-inside">
+        <div class="sub-container center-elements-inside">
             <h2>
                 Java Foundations
             </h2>
@@ -104,7 +105,13 @@ const certificatesDivContent =
             alt="java-foundations-img">
         </div>
 
-        <div class="column1 center-elements-inside">
+        <div class="sub-container center-elements-inside">
+            <h2>
+                Obtaining more certificates...
+            </h2>
+        </div>
+
+        <div class="sub-container center-elements-inside">
             <h2>
                 Obtaining more certificates...
             </h2>
@@ -116,15 +123,17 @@ const certificatesDivContent =
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-rows: auto;
+            gap: 1em;
         }
 
-        .column1, .column2 {
-            padding: 10px;
+        .sub-container {
+            padding: 1.5em 2em;
         }
 
-        .column1 img, .column2 img {
+        .sub-container img {
+            height: 25em;
             width: 31em;
-            height: 100%;
+            padding: 1em 0em;
 
             /* 
                 Not using [.add-border-radius-with-bg] because it's a custom style in class
@@ -378,18 +387,15 @@ const techStackDivContent =
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-rows: auto;
-            gap: 1%;
+            gap: 1em;
         }
         .sub-container {
-            padding: 20px 40px;
-        }
-        .footer {
-            padding: 5%;
+            padding: 1.5em 2.5em;
         }
 
         .container img {
-            width: 55px;
-            height: 55px;
+            width: 4em;
+            height: 4em;
             padding: 1% 1.5%;
         }
         .icons {
@@ -411,10 +417,10 @@ const skillsDivContent =
         <div class="column1">
             <h2 class="center-elements-inside">Technical Skills</h2>
 
-            <!-- OOP Proficiency -->
+            <!-- Development -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/Skills/technical skills/development.png" 
                     alt="">
                     <h2>
                         Development
@@ -429,7 +435,7 @@ const skillsDivContent =
             <!-- Database Management -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/Skills/technical skills/database management.png" 
                     alt="">
                     <h2>
                         Database Management
@@ -444,7 +450,7 @@ const skillsDivContent =
             <!-- System Administration -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/Skills/technical skills/system administration.png" 
                     alt="">
                     <h2>
                         System Administration
@@ -459,7 +465,7 @@ const skillsDivContent =
             <!-- Operating Systems -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/Skills/technical skills/os.png" 
                     alt="">
                     <h2>
                         Operating Systems
@@ -473,7 +479,7 @@ const skillsDivContent =
             <!-- Networking -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/Skills/technical skills/networking.png" 
                     alt="">
                     <h2>
                         Networking
@@ -488,7 +494,7 @@ const skillsDivContent =
             <!-- Hardware Support -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/Skills/technical skills/hardware support.png" 
                     alt="">
                     <h2>
                         Hardware Support
@@ -503,7 +509,7 @@ const skillsDivContent =
             <!-- Software Support -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/Skills/technical skills/software support.png" 
                     alt="">
                     <h2>
                         Software Support
@@ -518,10 +524,10 @@ const skillsDivContent =
             <!-- Troubleshooting and Problem Solving -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/Skills/technical skills/troubleshooting.png" 
                     alt="">
                     <h2>
-                        Troubleshooting and Problem Solving 
+                        Troubleshooting and <br>Problem Solving 
                     </h2>
                 </div>
                 <ul>
@@ -533,7 +539,7 @@ const skillsDivContent =
             <!-- Cybersecurity Basics -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/Skills/technical skills/cybersecurity.png" 
                     alt="">
                     <h2>
                         Cybersecurity Basics
@@ -548,7 +554,7 @@ const skillsDivContent =
             <!-- GitHub Proficiency -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/github-logo.png" 
                     alt="">
                     <h2>
                         GitHub Proficiency
@@ -562,7 +568,7 @@ const skillsDivContent =
             <!-- Backup and Recovery -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/Skills/technical skills/backup and recovery.png" 
                     alt="">
                     <h2>
                         Backup and Recovery
@@ -577,10 +583,10 @@ const skillsDivContent =
             <!-- Extra -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/Skills/learning.png" 
                     alt="">
                     <h2>
-                        Coming soon...
+                        Learning...
                     </h2>
                 </div>
                 <ul>
@@ -590,13 +596,12 @@ const skillsDivContent =
         </div>
 
         <div class="column2">
-
             <h2 class="center-elements-inside">Soft Skills</h2>
 
             <!-- Communication Skills -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/Skills/soft skills/communication.png" 
                     alt="">
                     <h2>
                         Communication Skills
@@ -611,7 +616,7 @@ const skillsDivContent =
             <!-- Leadership -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/Skills/soft skills/leadership.png" 
                     alt="">
                     <h2>
                         Leadership Skills
@@ -625,7 +630,7 @@ const skillsDivContent =
             <!-- Teamwork and Collaboration -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/Skills/soft skills/teamwork.png" 
                     alt="">
                     <h2>
                         Teamwork and Collaboration
@@ -641,10 +646,10 @@ const skillsDivContent =
             <!-- Extra -->
             <div class="sub-container add-border-radius-with-bg">
                 <div class="head">
-                    <img src="resources/Skills/critical thinking.png" 
+                    <img src="resources/Skills/learning.png" 
                     alt="">
                     <h2>
-                        Coming soon...
+                        Learning
                     </h2>
                 </div>
                 <ul>
@@ -658,10 +663,10 @@ const skillsDivContent =
                 display: grid;
                 grid-template-columns: 50% 50%;
                 grid-template-rows: auto;
-                gap: 1%;
+                gap: 1em;
             }
             .sub-container {
-                padding: 20px 40px;
+                padding: 1.5em 2.5em;
                 margin: 1%;
             }
             .column1, .column2 {
@@ -670,8 +675,8 @@ const skillsDivContent =
             }
 
             .container img {
-                width: 55px;
-                height: 55px;
+                width: 4em;
+                height: 4em;
                 padding: 1% 1.5%;
             }
             .head {

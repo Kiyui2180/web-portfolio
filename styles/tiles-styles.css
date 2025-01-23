@@ -92,13 +92,6 @@ picture-div
     width: 4em;
 
 }
-.tech-stack-imgs-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
-}
-
 /* 
     skills-div
 */
@@ -110,6 +103,13 @@ picture-div
 .skills-imgs-div img{
     height: 4em;
     width: 4em;
+}
+/* I placed them together (skills and tech stack) here for less scrolling and organization. */
+.tech-stack-imgs-div, .skills-imgs-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
 }
 
 /* 
