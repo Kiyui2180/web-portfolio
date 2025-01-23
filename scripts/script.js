@@ -1,9 +1,5 @@
 // Script for the webpage's tile expand and contents.
 
-// Load upon start of web portfolio.
-// alert("Web Portfolio is still under development, expect some unoptimized screen sizes and missing contents, thank you for your patience! Click [OK] to view page anyway.\n— Euge Kyle");
-
-
 // init variables 
 let tilesAndNavStyle = document.createElement("style");
 // selectedTile is for the selected tile itself, the UI. While selectedTileName 
@@ -37,7 +33,7 @@ function SelectPictureDiv()
     TilesAndNavScale();
     SelectedTileColdFunction();
 
-    document.getElementById("expand-tile").innerHTML = "" // Place pictureDivContent here.;
+    document.getElementById("expand-tile").innerHTML = placeholderDiv; // Place pictureDivContent here.;
 }
 // Function for clicking the [certificates-div].
 function SelectCertificatesDiv()
@@ -56,6 +52,7 @@ function SelectUserNameAndPictureDiv()
     TilesAndNavScale();
     SelectedTileColdFunction();
 
+    document.getElementById("expand-tile").innerHTML = placeholderDiv; // Add a unique expanding tile here.
 }
 function SelectTechStackDiv()
 {
@@ -82,7 +79,7 @@ function SelectEducationDiv()
     TilesAndNavScale();
     SelectedTileColdFunction();
 
-    document.getElementById("expand-tile").innerHTML = "" // Place educationDivContent here.;
+    document.getElementById("expand-tile").innerHTML = placeholderDiv; // Place educationDivContent here.;
 }
 function SelectProfessionalReferencesDiv()
 {
@@ -91,7 +88,7 @@ function SelectProfessionalReferencesDiv()
     TilesAndNavScale();
     SelectedTileColdFunction();
 
-    document.getElementById("expand-tile").innerHTML = "";
+    document.getElementById("expand-tile").innerHTML = placeholderDiv;
 }
 
 
@@ -247,7 +244,6 @@ function UndoNavBar()
             <style>
             #nav-bar {
                 width: 20em;
-                cursor: default;
                 pointer-events: none; 
             } 
             </style>
@@ -263,6 +259,8 @@ function UndoNavBar()
         document.getElementById("nav-bar").innerHTML += navBar_A_s_3;
         return Sleep(300);
     }).then (() => {
+        // After adding all the three options, it will now enable the cursor's pointer events to true.
+        // Being able to click on the options again.
         document.getElementById("nav-bar").innerHTML +=
         `
             <style>
@@ -289,11 +287,18 @@ function SelectedTileColdFunction()
 
     ExpandTile();
 }
+function CheckScreenSize()
+{
+    const getScreenSize = window.innerWidth;
+
+    if (getScreenSize <= 600)
+    {
+        alert("You are viewing on a mobile display, please visit it on a device with a larger display such as a tablet, laptop, or desktop monitor. Sorry for the inconvenience, I am working on the mobile display optimization. Click [OK] to view page anyway.\n— Euge Kyle");
+    }
+}
 
 // main method
+// Load upon start of web portfolio.
+alert("Web Portfolio is still under development, expect some unoptimized screen sizes and missing contents, thank you for your patience! Click [OK] to view page anyway.\n— Euge Kyle");
 
-
-
-
-
-// NOTE:
+CheckScreenSize();

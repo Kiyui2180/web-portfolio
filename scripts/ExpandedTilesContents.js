@@ -1,4 +1,6 @@
 // init variables
+
+// about-me-div
 const aboutMeDivContent = 
 `
     <h1>
@@ -6,8 +8,8 @@ const aboutMeDivContent =
     </h1>
     <p>
         Hi! I’m Euge Kyle Fabella, a passionate IT student currently pursuing a Bachelor of Science in Information Technology at 
-        STI Colleges of Santa Rosa City. I have a growing interest in system administration, network technologies, and development, and 
-        I am eager to expand my knowledge and skills in these areas. With a strong dedication to learning and problem-solving, 
+        STI Colleges of Santa Rosa City. I have a growing interest in system administration, network technologies, and software and web development, and 
+        I am eager to expand my knowledge and skills in these areas. With a strong dedication to learning, 
         I’m excited to explore the world of technology and contribute to meaningful solutions in the future.
     </p>
     <h2>
@@ -34,6 +36,7 @@ const aboutMeDivContent =
     </p>
 `;
 
+// picture div
 const pictureDivContent =
 `
     <h1 class="center-elements-inside">
@@ -80,6 +83,7 @@ const pictureDivContent =
     </style>
 `;
 
+// certificates-div
 // Recheck this one.
 const certificatesDivContent =
 `
@@ -145,6 +149,7 @@ const certificatesDivContent =
     </style>
 `;
 
+// education-div
 // Recheck this one.
 const educationDivContent =
 `
@@ -179,6 +184,7 @@ const educationDivContent =
     </style>
 `;
 
+// tech-stack-div
 const techStackDivContent =
 `
     <h1 class="center-elements-inside">
@@ -371,13 +377,14 @@ const techStackDivContent =
         <!-- Frameworks -->
         <div class="sub-container add-border-radius-with-bg">
             <h2>
-                Frameworks
+                Learning
             </h2>
             <p>
-                Obtaining more frameworks...
+                Obtaining more tech stacks...
             </p>
             <div class="icons">
-                
+                <img src="resources/Skills/learning.png" 
+                alt="">
             </div>
         </div>
     </div>
@@ -396,7 +403,7 @@ const techStackDivContent =
         .container img {
             width: 4em;
             height: 4em;
-            padding: 1% 1.5%;
+            padding: 1em 0.5em;
         }
         .icons {
             display: flex;
@@ -406,6 +413,7 @@ const techStackDivContent =
     </style>
 `;
 
+// skills-div
 const skillsDivContent = 
 `
     <h1 class="center-elements-inside">
@@ -413,12 +421,11 @@ const skillsDivContent =
     </h1>
 
     <div class="container">
-
-        <div class="column1">
+        <div class="column1 add-border-radius-with-bg">
             <h2 class="center-elements-inside">Technical Skills</h2>
 
             <!-- Development -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/Skills/technical skills/development.png" 
                     alt="">
@@ -427,13 +434,13 @@ const skillsDivContent =
                     </h2>
                 </div>
                 <ul>
-                    <li>Proficient in OOP programming languages (C#, Java, Python, JS).</li>
-                    <li>Proficient in compilers and foundational knowledge in interpreters languages.</li>
+                    <li>Proficient in OOP programming languages (C#, Java).</li>
+                    <li>Proficient in compilers and foundational knowledge in interpreters.</li>
                 </ul>
             </div>
 
             <!-- Database Management -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/Skills/technical skills/database management.png" 
                     alt="">
@@ -448,7 +455,7 @@ const skillsDivContent =
             </div>
 
             <!-- System Administration -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/Skills/technical skills/system administration.png" 
                     alt="">
@@ -457,13 +464,13 @@ const skillsDivContent =
                     </h2>
                 </div>
                 <ul>
-                    <li>Managing user accounts, permissions, and group policies.</li>
+                    <li>Managing user accounts and permissions.</li>
                     <li>Familiarity with Active Directory.</li>
                 </ul>
             </div>
 
             <!-- Operating Systems -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/Skills/technical skills/os.png" 
                     alt="">
@@ -472,12 +479,12 @@ const skillsDivContent =
                     </h2>
                 </div>
                 <ul>
-                    <li>Proficiency in Windows, macOS, Linux (Ubuntu, Fedora).</li>
+                    <li>Proficient in Windows; foundational knowledge in macOS and Linux (Ubuntu, Fedora).</li>
                 </ul>
             </div>
 
             <!-- Networking -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/Skills/technical skills/networking.png" 
                     alt="">
@@ -492,7 +499,7 @@ const skillsDivContent =
             </div>
 
             <!-- Hardware Support -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/Skills/technical skills/hardware support.png" 
                     alt="">
@@ -501,13 +508,13 @@ const skillsDivContent =
                     </h2>
                 </div>
                 <ul>
-                    <li>Installation and maintenance of computers, printers, and peripherals.</li>
-                    <li>Component upgrades and hardware diagnostics.</li>
+                    <li>Basic installation and maintenance of computers, printers, and peripherals.</li>
+                    <li>Component upgrades and familiarity in hardware diagnostics.</li>
                 </ul>
             </div>
 
             <!-- Software Support -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/Skills/technical skills/software support.png" 
                     alt="">
@@ -522,7 +529,7 @@ const skillsDivContent =
             </div>
 
             <!-- Troubleshooting and Problem Solving -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/Skills/technical skills/troubleshooting.png" 
                     alt="">
@@ -537,7 +544,7 @@ const skillsDivContent =
             </div>
 
             <!-- Cybersecurity Basics -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/Skills/technical skills/cybersecurity.png" 
                     alt="">
@@ -552,7 +559,7 @@ const skillsDivContent =
             </div>
 
             <!-- GitHub Proficiency -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/github-logo.png" 
                     alt="">
@@ -562,11 +569,12 @@ const skillsDivContent =
                 </div>
                 <ul>
                     <li>Used a project management app (GitHub Project Management) for the capstone project.</li>
+                    <li>Uses GitHub Desktop application for managing repositories.</li>
                 </ul>
             </div>
 
             <!-- Backup and Recovery -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/Skills/technical skills/backup and recovery.png" 
                     alt="">
@@ -576,12 +584,11 @@ const skillsDivContent =
                 </div>
                 <ul>
                     <li>Implementing and managing backup solutions.</li>
-                    <li>Restoring systems after data loss.</li>
                 </ul>
             </div>
 
             <!-- Extra -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/Skills/learning.png" 
                     alt="">
@@ -595,11 +602,11 @@ const skillsDivContent =
             </div>
         </div>
 
-        <div class="column2">
+        <div class="column2 add-border-radius-with-bg">
             <h2 class="center-elements-inside">Soft Skills</h2>
 
             <!-- Communication Skills -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/Skills/soft skills/communication.png" 
                     alt="">
@@ -614,7 +621,7 @@ const skillsDivContent =
             </div>
 
             <!-- Leadership -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/Skills/soft skills/leadership.png" 
                     alt="">
@@ -628,7 +635,7 @@ const skillsDivContent =
             </div>
 
             <!-- Teamwork and Collaboration -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/Skills/soft skills/teamwork.png" 
                     alt="">
@@ -637,14 +644,14 @@ const skillsDivContent =
                     </h2>
                 </div>
                 <ul>
-                    <li>Working with colleagues to solve complex problems.</li>
+                    <li>Working with colleagues to solve problems.</li>
                     <li>Sharing knowledge and best practices within the team.</li>
                     <li>Illustrated a roadmap for the capstone team.</li>
                 </ul>
             </div>
 
             <!-- Extra -->
-            <div class="sub-container add-border-radius-with-bg">
+            <div class="sub-container">
                 <div class="head">
                     <img src="resources/Skills/learning.png" 
                     alt="">
@@ -663,21 +670,35 @@ const skillsDivContent =
                 display: grid;
                 grid-template-columns: 50% 50%;
                 grid-template-rows: auto;
+
+                /* 
+                    This [gap: 1em;] puts a gap between the two columns of the grid template, since 
+                    there are only two grids (column-wise), it only creates a gap between the columns, 
+                    hence it won't affect the gaps between the [.sub-container] classes.
+                    Refer to [.column1, .column2] classes for more info.
+                */
                 gap: 1em;
             }
             .sub-container {
                 padding: 1.5em 2.5em;
-                margin: 1%;
             }
             .column1, .column2 {
                 display: flex;
                 flex-direction: column;
+                padding: 1.5em 0em;
+
+                /* 
+                    In here, since there's only one column, the [gap] property only affects the top and 
+                    bottom gaps of the divs. Column-wise, there's only one column, so there's really 
+                    nothing to put a gap on the left and right sides of the div.
+                */
+                gap: 1em;
             }
 
             .container img {
                 width: 4em;
                 height: 4em;
-                padding: 1% 1.5%;
+                padding: 1em 0.5em;
             }
             .head {
                 display: flex;
@@ -685,4 +706,27 @@ const skillsDivContent =
             }
         </style>
     </div>  
+`;
+
+// Used for content placeholder, so expanding tiles won't just be empty.
+const placeholderDiv = 
 `
+    <div class="container center-elements-inside">
+        <h1 class="content">
+            Please wait, the content will be added soon; I am working on it! :D
+        </h1>
+    </div>
+    
+
+    <style>
+        .container {
+            height: 50vh;
+        }
+        .content {
+            text-align: center;
+            align-items: center;
+            padding-top: 4em;
+        }
+
+    </style>
+`;
