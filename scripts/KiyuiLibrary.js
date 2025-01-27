@@ -4,13 +4,15 @@ function Sleep(ms) {
 }
 // example
     // Sleep([enter number in ms]).then(() => 
-    //     {
-    //         // Place your first block of code here (first execution).
-    //         return Sleep(1000);
-    //     }).then(() => {
-    //         // For chaining, place your second block of code here (second execution).
-    //     }); // Add [.then(( => {}));] if you need more chain executions.
+    // {
+    //     // Place your first block of code here (first execution).
+    //     return Sleep(1000);
+    // }).then(() => {
+    //     // For chaining, place your second block of code here (second execution).
+    //         return Sleep(1000);                
+    // }); // Add [.then(() => {});] if you need more chain executions.
 
+    // Make the [enter number in ms] to 0 if you want the block of code's execution to be instant.
 
 // Debug function call
 function DebugCall() 

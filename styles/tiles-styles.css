@@ -17,16 +17,12 @@
 /* 
 picture-div
 */
-.picture-div {
-    cursor: pointer;
-}
 .picture-div img {
     /* Configuring the border radius, size and cropping the picture. */
     height: 20em;
     width: 20em;
     border-radius: 40px;
     object-fit: cover;
-    
 }
 
 /*

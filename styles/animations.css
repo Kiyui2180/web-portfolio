@@ -42,3 +42,30 @@ touches for better UI and UX. */
 .more-div, .professional-references-div, .education-div {
     transition: 0.25s;
 }
+
+
+/* 
+    education-div
+*/
+@keyframes img-viewer-select-animation {
+    0% {
+        width: 45vw;
+    }
+    50% {
+        width: 0vw;
+    }
+    100%
+    {
+        width: 45vw;
+    }
+}
+@keyframes options-icons-pointer-events {
+    from {
+        cursor: default;
+        pointer-events: none;
+    }
+    to {
+        cursor: pointer;
+        pointer-events: all;
+    }
+}

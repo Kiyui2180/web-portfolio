@@ -36,64 +36,14 @@ const aboutMeDivContent =
     </p>
 `;
 
-// picture div
-const pictureDivContent =
-`
-    <h1 class="center-elements-inside">
-        Hello!
-    </h1>
-    <div class="container">
-        <div class="div1 center-elements-inside">
-            <img src="resources/pictures/1.jpeg" alt="1">
-            <img src="resources/pictures/2.jpeg" alt="2">
-            <img src="resources/pictures/3.png" alt="3">
-            <img src="resources/pictures/4.jpeg" alt="4">
-            
-        </div>
-        <div class="div2 center-elements-inside">
-            
-        </div>
-        <div class="grid3 center-elements-inside">
-            <!-- <img src="resources/pictures/5.jpeg" alt="5">
-            <img src="resources/pictures/6.jpeg" alt="6">
-            <img src="resources/pictures/7.jpeg" alt="7">
-            <img src="resources/pictures/8.jpeg" alt="8"> -->
-        </div>
-    </div>
-
-    <style>
-        .container {
-            height: 10vh;
-        }
-        .div1, .div2{
-            position: absolute;
-            overflow: hidden;
-        }
-        .div1 img {
-            height: 500px;
-            width: 500px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-        .div1 {
-            display: flex;
-            justify-content: space-around;
-            animation: slide 10s linear infinite;
-        }
-    </style>
-`;
-
 // certificates-div
-// Recheck this one.
 const certificatesDivContent =
 `
-    <!-- Go back here and recheck, don't like how it resizes. [verify] -->
-    <h1 class="center-elements-inside">
-        Certifcates
-    </h1>
+    <!-- Go back here and recheck, don't like how it resizes. [FIX] -->
+    <h1 class="center-elements-inside">Certifcates</h1>
 
     <div class="container">
-        <div class="sub-container center-elements-inside">
+        <div class="sub-container add-border-radius-with-bg center-elements-inside">
             <h2>
                 System Administration
             </h2>
@@ -101,7 +51,7 @@ const certificatesDivContent =
             alt="system-administration-img">
         </div>
 
-        <div class="sub-container center-elements-inside">
+        <div class="sub-container add-border-radius-with-bg center-elements-inside">
             <h2>
                 Java Foundations
             </h2>
@@ -109,13 +59,13 @@ const certificatesDivContent =
             alt="java-foundations-img">
         </div>
 
-        <div class="sub-container center-elements-inside">
+        <div class="sub-container add-border-radius-with-bg center-elements-inside">
             <h2>
                 Obtaining more certificates...
             </h2>
         </div>
 
-        <div class="sub-container center-elements-inside">
+        <div class="sub-container add-border-radius-with-bg center-elements-inside">
             <h2>
                 Obtaining more certificates...
             </h2>
@@ -135,8 +85,8 @@ const certificatesDivContent =
         }
 
         .sub-container img {
-            height: 25em;
-            width: 31em;
+            height: 90%;
+            width: 80%;
             padding: 1em 0em;
 
             /* 
@@ -154,33 +104,87 @@ const certificatesDivContent =
 const educationDivContent =
 `
     <h1 class="center-elements-inside">
-        My Education
+        Educations
     </h1>
 
-    <div class="container">
-        <div class="grid1">
-            <h2>College</h2>
+    <!-- 
+        I've thought that the college I went to should be the first information 
+        to show in this div, therefore, the default set of information would be STI College 
+        Santa Rosa.        
+    -->
+    <div class="container center-elements-inside add-border-radius-with-bg">
+        <div class="img-viewer center-elements-inside">
+            <div class="education-description" id="education-description">
+                
+            </div>
+            <img src="resources/educations/sti.jpg" 
+            alt="sti-img"  id="img-viewer">
         </div>
-        <div class="grid2 center-elements-inside">
-            2
-        </div>
-        <div class="grid3 center-elements-inside">
-            <h2>STI College of Santa Rosa City</h2>
-            Graduated in the batch 2024-2025 with Bachelors of Science in Information Technology
+
+        <h2 id="education-title">
+            College: STI College Santa Rosa
+        </h2>
+        
+        <div class="options-icons">
+            <div class="sti" onclick="ViewSTICollege()">
+                <img src="resources/educations/sti.jpg" 
+                alt="sti-img" >
+            </div>
+            <div class="mcl" onclick="ViewMCLCollege()">
+                <img src="resources/educations/mcl.png" 
+                alt="mcl-img">
+            </div>
+            <div class="practicum" onclick="ViewPracticum()">
+                <img src="resources/educations/practicum.jpg" 
+                alt="practicum-img">
+            </div>
         </div>
     </div>
 
     <style>
         .container {
-            display: grid;
-            grid-template-columns: 45% 10% 45%;
-            grid-template-rows: 33% 33% 33%;
-            grid-template-areas: 
-            "grid1 grid2 grid3"
-            "grid1 grid2 grid3"
-            "grid1 grid2 grid3"
-            ;
+            height: 50vh;
+            width: 60vw;
+            padding: 1.5em 0em;
+            margin: auto;
+            
         }
+        .img-viewer {
+            position: relative;
+        }
+        .img-viewer img {
+            height: 30vh;
+            width: 45vw;
+            object-fit: cover;
+            border-radius: 40px;
+            padding: 1em 0em;
+        }
+        .options-icons {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .options-icons img {
+            height: 4em;
+            width: 4em;
+            padding: 0em 0.5em;
+            object-fit: cover;
+            border-radius: 50%;
+            padding: 0em 2em;
+            cursor: pointer;
+            transition: 0.25s;
+        }
+        .options-container img:hover {
+            transform: scale(1.13);
+        }
+
+        
+        /* 
+            Work on this soon. [FIX]
+            .education-description {
+                position: fixed;
+                text-align: left;
+            } 
+        */
     </style>
 `;
 

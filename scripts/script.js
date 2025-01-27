@@ -11,6 +11,10 @@ let selectedTileName;
 let expandTile = document.createElement("style");
 let undoTilesAndNavStyle = document.createElement("style");
 
+//
+//  Tiles
+//
+
 // Function for clicking the [about-me-div].
 function SelectAboutMeDiv() 
 {
@@ -24,16 +28,6 @@ function SelectAboutMeDiv()
     // In addition, this is  the tile where it will present the contents of 
     // whatever the tile is selected.
     document.getElementById("expand-tile").innerHTML = aboutMeDivContent;
-}
-// Function for clicking the [picture-div].
-function SelectPictureDiv()
-{
-    selectedTileName = "picture-div";
-
-    TilesAndNavScale();
-    SelectedTileColdFunction();
-
-    document.getElementById("expand-tile").innerHTML = placeholderDiv; // Place pictureDivContent here.;
 }
 // Function for clicking the [certificates-div].
 function SelectCertificatesDiv()
@@ -79,7 +73,7 @@ function SelectEducationDiv()
     TilesAndNavScale();
     SelectedTileColdFunction();
 
-    document.getElementById("expand-tile").innerHTML = placeholderDiv; // Place educationDivContent here.;
+    document.getElementById("expand-tile").innerHTML = educationDivContent; // Place educationDivContent here.;
 }
 function SelectProfessionalReferencesDiv()
 {
@@ -93,13 +87,108 @@ function SelectProfessionalReferencesDiv()
 
 
 
+//
+// expanding tiles scripts
+//
+// These functions are used for tiles that are more dynamic such as the [education-div] and [references-div].
+// Since you can only append html and css modifications in [.innerHTML], I have thought of placing it here instead.
+
+// education-div
+let imgViewer = document.createElement("style");
+
+function ViewSTICollege()
+{    
+    // Calling the [Education_IMGViewerSelectAnimation] function to display a transition animation whenever a user 
+    // clicks on a picture. This applies to all functions in the [education-div].
+    Education_IMGViewerSelectAnimation();
+
+    // I delayed the change of the [#img-viewer]'s [img] to 500ms so that when the [img] gets to [width: 0vw;], it'll 
+    // transition smoothly. Finally, after 500ms, it'll wait another 500ms to execute the last line of code; this line 
+    // of code is to remove the added style in [head], so whenever the viewer clicks on another picture, the styles won't 
+    // stack up to another.  
+    Sleep([750]).then(() => 
+    {
+        document.getElementById("img-viewer").src = "resources/educations/sti.jpg";
+        document.getElementById("education-title").innerHTML = `College: STI College Santa Rosa`;
+
+        // Work on this real soon. [FIX]
+        // document.getElementById("education-description").innerHTML = 
+        // `
+        //     <h3>
+        //         2021 - 2025
+        //     </h3>
+        //     <p>
+        //         My alma matter.
+        //     </p>
+        // `;
+
+        return Sleep(750);
+    }).then(() => {
+        document.head.removeChild(imgViewer);
+    });
+}
+function ViewMCLCollege()
+{
+    Education_IMGViewerSelectAnimation();
+
+    Sleep([750]).then(() => 
+    {
+        document.getElementById("img-viewer").src = "resources/educations/mcl.png";
+        document.getElementById("education-title").innerHTML = `Senior High School: Mapua Malayan Colleges Laguna`;
+
+        return Sleep(750);
+    }).then(() => {
+        document.head.removeChild(imgViewer);
+    });
+}
+function ViewPracticum()
+{
+    Education_IMGViewerSelectAnimation();
+
+    Sleep([750]).then(() => 
+    {
+        document.getElementById("img-viewer").src = "resources/educations/practicum.jpg";
+        document.getElementById("education-title").innerHTML = `IT Practicum`;
+
+        return Sleep(750);
+    }).then(() => {
+        document.head.removeChild(imgViewer);
+    });
+}
+function Education_IMGViewerSelectAnimation()
+{
+    // Do animation.
+    imgViewer.innerHTML =
+    `
+        #img-viewer {
+            animation: img-viewer-select-animation 1.5s ease-in-out;
+        }
+
+        /*
+            I don't know what happened here, fix this soon. [FIX]
+            What I want to happen: it shouldn't be able to click on other icons or else it'll stack and 
+            break the animations. Try replicating the problem: click on the 3 icons simultaneously.
+            #options-icons img {
+                animation: options-icons-pointer-events 6s;
+            }
+        */
+    `;
+
+    // In order for the animation to work, it'll add it in the [head] of the [html]. I used 
+    // the [styles] method since I only require style changes and no html elements are added, removed, 
+    // or overhauled.
+    document.head.appendChild(imgViewer);
+}
+
 
 
 // 
-// cold functions
+// "cold" functions
+//
 // These functions are blocks of codes that are used so often.
 // This reduces scroll time, promotes separation of concerns, and OOP.
 //
+
 // When a user clicks a tile, this is an animation where the tiles other than it scales down, 
 // blurs, and navigation bar will scale up.
 function TilesAndNavScale()
