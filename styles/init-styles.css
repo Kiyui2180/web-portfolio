@@ -9,6 +9,10 @@
     src: url(../resources/Poppins-Font/Poppins-Regular.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Initializing the webpage's body. */
 body {
     /* bg color, initiating the font and its color, and 
@@ -26,6 +30,20 @@ body {
     /* Get back on this one, this is the whole body of the webpage, make sure it's 
         responsive. It's all in auto for now. */
     overflow: hidden;
-    width: 100vw;
+    width: 90%;
+    height: auto;
+    
+    /* Centering the whole [body] of the [html]. */
+    margin: auto;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+.tiles-container, .projects-container, .contact-container {
+    padding-top: 5%;
     height: 100vh;
+    width: auto;
 }

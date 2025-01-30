@@ -8,8 +8,10 @@
 .tiles {
     /* Placement of the tiles inside the tiles container (div). */
     display: grid;
-    grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    /* grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;; */
+    grid-template-rows: repeat(auto-fit, minmax(4em, 1fr));
+    /* grid-template-rows: 25% 25% 25% 25%; */
     grid-template-areas: 
         "about-me-box about-me-box about-me-box about-me-box picture-box picture-box"
         "certificates-box certificates-box username-and-picture-box username-and-picture-box picture-box picture-box"
@@ -21,13 +23,14 @@
     I forgot, I just left it there. */
     gap: 1em;
 
-    /* To prevent the elements inside the container to shift to the right side as it
-    is aligned to the upper left */
-    justify-content: center; 
+    /* Added padding so the tiles that are hovered on by the cursor will expand and won't 
+    be cut by [overflow: hidden;] */
+    padding: 0.5em;
 
     /* height and width of this div */
-    height: 45em;
-    width: 70em;
+    width: 74em;
+    height: 48em;
+    overflow: hidden;
 }
 
 /* 

@@ -81,13 +81,12 @@ const certificatesDivContent =
         }
 
         .sub-container {
-            padding: 1.5em 2em;
+            padding: 1.5em 2em;  
         }
 
         .sub-container img {
-            height: 90%;
+            height: 100%;
             width: 80%;
-            padding: 1em 0em;
 
             /* 
                 Not using [.add-border-radius-with-bg] because it's a custom style in class
@@ -115,7 +114,7 @@ const educationDivContent =
     <div class="container center-elements-inside add-border-radius-with-bg">
         <div class="img-viewer center-elements-inside">
             <div class="education-description" id="education-description">
-                
+                <!-- Left empty for dynamic input and output of information -->
             </div>
             <img src="resources/educations/sti.jpg" 
             alt="sti-img"  id="img-viewer">
@@ -147,7 +146,6 @@ const educationDivContent =
             width: 60vw;
             padding: 1.5em 0em;
             margin: auto;
-            
         }
         .img-viewer {
             position: relative;
@@ -157,7 +155,6 @@ const educationDivContent =
             width: 45vw;
             object-fit: cover;
             border-radius: 40px;
-            padding: 1em 0em;
         }
         .options-icons {
             display: flex;
@@ -173,10 +170,9 @@ const educationDivContent =
             cursor: pointer;
             transition: 0.25s;
         }
-        .options-container img:hover {
-            transform: scale(1.13);
+        .options-icons img:hover {
+            transform: scale(1.16);
         }
-
         
         /* 
             Work on this soon. [FIX]

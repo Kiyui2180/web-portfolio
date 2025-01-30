@@ -29,134 +29,165 @@
                 navigation bar
             -->
             <nav class="add-border-radius-with-bg nav-bar" id="nav-bar">
-                <a href="">Home</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
+                <a onclick="ViewHome()">Home</a>
+                <a onclick="ViewProjects()">Projects</a>
+                <a onclick="ViewContact()">Contact</a>
             </nav>
             
-             <!-- 
-                tiles
-                -->
-            <section class="tiles center-this-div">
-                <!-- 
-                    about-me-div
-                -->
-                <div class="about-me-div add-border-radius-with-bg" id="about-me-div" onclick="SelectAboutMeDiv()">
-                    <h3>Who am I?</h3>
-                    <p>
-                        Hi! I’m Euge Kyle Fabella, a passionate IT student currently pursuing a Bachelor of Science in Information Technology at 
-                        STI Colleges of Santa Rosa City. I have a growing interest in system administration, network technologies, and software and web development, and 
-                        I am eager to expand my knowledge and skills in these areas.
-                    </p>
-                </div>
-
-                <!--
-                    picture-div
-                -->
-                <div class="picture-div center-elements-inside add-border-radius-with-bg" id="picture-div">
-                    <img src="resources/picture-of-me.jpg" alt="picture-of-me">
-                </div>
-
-                <!-- 
-                    certificates-div
-                -->
-                <div class="certificates-div center-elements-inside add-border-radius-with-bg" id="certificates-div" onclick="SelectCertificatesDiv()">
-                    <h2>Certificates</h2>
-                </div>
-
-                <!-- 
-                    username-and-picture-div
-                -->
-                <div class="username-and-picture-div center-elements-inside add-border-radius-with-bg" id="username-and-picture-div" onclick="SelectUserNameAndPictureDiv()">
-                    <div>
-                        <img src="https://avatars.githubusercontent.com/u/66368460?s=400&u=4076b4e18dbf7ca2ccdb17f1ca79cc2b0a90eff8&v=4" 
-                        alt="internet-picture" id="online-picture">
-                        <h2>Euge Kyle Fabella</h2>
-                        <div class="social-links">
-                            <a href="https://github.com/Kiyui2180">
-                                <img src="resources/github-logo.png" alt="github-logo">
-                            </a>
-                            <a href="#">
-                                <img src="resources/linkedin-icon.png" alt="linkedin-icon">
-                            </a>
+            
+            <div class="main-container">
+                <!-- Tiles -->
+                <div class="tiles-container" id="tiles-container">
+                    <section class="tiles center-this-div">
+                        <!-- 
+                            about-me-div
+                        -->
+                        <div class="about-me-div add-border-radius-with-bg" id="about-me-div" onclick="SelectAboutMeDiv()">
+                            <h3>Who am I?</h3>
+                            <p>
+                                Hi! I’m Euge Kyle Fabella, a passionate IT student currently pursuing a Bachelor of Science in Information Technology at 
+                                STI Colleges of Santa Rosa City. I have a growing interest in system administration, network technologies, and software and web development, and 
+                                I am eager to expand my knowledge and skills in these areas.
+                            </p>
                         </div>
-                    </div>
+        
+                        <!--
+                            picture-div
+                        -->
+                        <div class="picture-div center-elements-inside add-border-radius-with-bg" id="picture-div">
+                            <img src="resources/picture-of-me.jpg" alt="picture-of-me">
+                        </div>
+        
+                        <!-- 
+                            certificates-div
+                        -->
+                        <div class="certificates-div center-elements-inside add-border-radius-with-bg" id="certificates-div" onclick="SelectCertificatesDiv()">
+                            <h2>Certificates</h2>
+                        </div>
+        
+                        <!-- 
+                            username-and-picture-div
+                        -->
+                        <div class="username-and-picture-div center-elements-inside add-border-radius-with-bg" id="username-and-picture-div">
+                            <div>
+                                <img src="https://avatars.githubusercontent.com/u/66368460?s=400&u=4076b4e18dbf7ca2ccdb17f1ca79cc2b0a90eff8&v=4" 
+                                alt="internet-picture" id="online-picture">
+                                <h2>Euge Kyle Fabella</h2>
+                                <div class="social-links">
+                                    <a href="https://github.com/Kiyui2180">
+                                        <img src="resources/github-logo.png" alt="github-logo">
+                                    </a>
+                                    <a href="#">
+                                        <img src="resources/linkedin-icon.png" alt="linkedin-icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- 
+                            quote-div
+                        -->
+                        <div class="quote-div center-elements-inside add-border-radius-with-bg" id="quote-div">
+                            <h3>
+                                "The only way to do great work is to love what you do."
+                                <br>
+                                — Steve Jobs
+                            </h3>
+                        </div>
+        
+                        <!-- 
+                            tech-stack-div
+                        -->
+                        <div class="tech-stack-div add-border-radius-with-bg" id="tech-stack-div" onclick="SelectTechStackDiv()">
+                            <h2>
+                                Tech Stack
+                            </h2>
+                            <div class="tech-stack-imgs-div">
+                                <img src="resources/Programming Languages and Database/java-icon.png" alt="java-icon">
+                                <img src="resources/Programming Languages and Database/c-sharp-icon.png" alt="c-sharp-icon">
+                                <img src="resources/Programming Languages and Database/python-icon.png" alt="python-icon">
+                                <img src="resources/Web Systems and Technologies/html.png" alt="html-icon">
+                                <img src="resources/Web Systems and Technologies/css-icon.icon" alt="css-icon">
+                                <img src="resources/Web Systems and Technologies/js-icon.png" alt="js-icon">
+                                <!-- add sql, mongodb, cisco, archimate, android studio,
+                                figma -->
+                            </div>
+                        </div>
+        
+                        <!-- 
+                            skills-div
+                        -->
+                        <div class="skills-div add-border-radius-with-bg" id="skills-div" onclick="SelectSkillsDiv()">
+                            <h2>
+                                Skills
+                            </h2>
+                            <div class="skills-imgs-div">
+                                <img src="resources/Skills/technical skills/development.png" alt="technical-skills-icon">
+                                <img src="resources/Skills/technical skills/database management.png" alt="database-management-icon">
+                                <img src="resources/Skills/technical skills/os.png" alt="operating-systems-icon">
+                                <img src="resources/Skills/technical skills/networking.png" alt="networking-icon">
+                                <img src="resources/Skills/soft skills/communication.png" alt="communication-icon">
+                                <img src="resources/Skills/soft skills/teamwork.png" alt="teamwork-icon">
+                            </div>
+                        </div>
+        
+                        <!-- 
+                            more-div
+                        -->
+                        <div class="more-div center-elements-inside add-border-radius-with-bg" id="more-div">
+                            <h2>
+                                More
+                            </h2>
+                        </div>
+        
+                        <!-- 
+                            education-div
+                        -->
+                        <div class="education-div center-elements-inside add-border-radius-with-bg" id="education-div" onclick="SelectEducationDiv()">
+                            <h2>
+                                Education
+                            </h2>
+                        </div>
+        
+                        <!-- 
+                            professional-references-div
+                        -->
+                        <div class="professional-references-div center-elements-inside add-border-radius-with-bg" id="professional-references-div" onclick="SelectProfessionalReferencesDiv()">
+                            <h3>
+                                Professional References
+                            </h3>
+                        </div>
+                    </section>
                 </div>
-
-                <!-- 
-                    quote-div
-                -->
-                <div class="quote-div center-elements-inside add-border-radius-with-bg" id="quote-div">
-                    <h3>
-                        "The only way to do great work is to love what you do."
-                        <br>
-                        — Steve Jobs
-                    </h3>
+                
+                <!-- Projects -->
+                <div class="projects-container" id="projects-container">
+                    <section class="projects center-this-div add-border-radius-with-bg center-elements-inside">
+                        <h1>
+                            Projects
+                        </h1>
+                        <h2>
+                            Please wait, the content will be added soon; I am working on it! :D
+                        </h2>
+                    </section>
                 </div>
-
-                <!-- 
-                    tech-stack-div
-                -->
-                <div class="tech-stack-div add-border-radius-with-bg" id="tech-stack-div" onclick="SelectTechStackDiv()">
-                    <h2>
-                        Tech Stack
-                    </h2>
-                    <div class="tech-stack-imgs-div">
-                        <img src="resources/Programming Languages and Database/java-icon.png" alt="java-icon">
-                        <img src="resources/Programming Languages and Database/c-sharp-icon.png" alt="c-sharp-icon">
-                        <img src="resources/Programming Languages and Database/python-icon.png" alt="python-icon">
-                        <img src="resources/Web Systems and Technologies/html.png" alt="html-icon">
-                        <img src="resources/Web Systems and Technologies/css-icon.icon" alt="css-icon">
-                        <img src="resources/Web Systems and Technologies/js-icon.png" alt="js-icon">
-                        <!-- add sql, mongodb, cisco, archimate, android studio,
-                        figma -->
-                    </div>
+                
+                <!-- Contact -->
+                <div class="contact-container" id="contact-container">
+                    <section class="contact center-this-div add-border-radius-with-bg center-elements-inside">
+                        <h1>
+                            Contact
+                        </h1>
+                        <h2>
+                            Please wait, the content will be added soon; I am working on it! :D
+                            <br>
+                            For my email and phone number, please refer to my resume for the meantime.
+                        </h2>
+                    </section>
                 </div>
-
-                <!-- 
-                    skills-div
-                -->
-                <div class="skills-div add-border-radius-with-bg" id="skills-div" onclick="SelectSkillsDiv()">
-                    <h2>
-                        Skills
-                    </h2>
-                    <div class="skills-imgs-div">
-                        <img src="resources/Skills/technical skills/development.png" alt="technical-skills-icon">
-                        <img src="resources/Skills/technical skills/database management.png" alt="database-management-icon">
-                        <img src="resources/Skills/technical skills/os.png" alt="operating-systems-icon">
-                        <img src="resources/Skills/technical skills/networking.png" alt="networking-icon">
-                        <img src="resources/Skills/soft skills/communication.png" alt="communication-icon">
-                        <img src="resources/Skills/soft skills/teamwork.png" alt="teamwork-icon">
-                    </div>
-                </div>
-
-                <!-- 
-                    more-div
-                -->
-                <div class="more-div center-elements-inside add-border-radius-with-bg" id="more-div">
-                    <h2>
-                        More
-                    </h2>
-                </div>
-
-                <!-- 
-                    education-div
-                -->
-                <div class="education-div center-elements-inside add-border-radius-with-bg" id="education-div" onclick="SelectEducationDiv()">
-                    <h2>
-                        Education
-                    </h2>
-                </div>
-
-                <!-- 
-                    professional-references-div
-                -->
-                <div class="professional-references-div center-elements-inside add-border-radius-with-bg" id="professional-references-div" onclick="SelectProfessionalReferencesDiv()">
-                    <h3>
-                        Professional References
-                    </h3>
-                </div>
-            </section>
+                
+            </div>
+            
         </main>
 
         <!-- Below is the div for the tiles to use to present its content. -->
@@ -185,6 +216,8 @@
             Refer to inspecting element.
             - Verify [certificates-div]'s script, make it more consistent. 
             - In [education-div], add description on each schools. [ctrl + f] then type "FIX".
+            - fix the nav bar shrinking then going to normal after getting filled up by words.
+            - fix nav bar after clicking a tile, the elements after clicking back makes the elements near one another slightly
         -->
     </body>
 </html>

@@ -13,10 +13,16 @@ nav {
     /* the nav bar's width so it won't be edge to edge in the screen */
     /* Using [em] unit for dynamic shape and size of the nav bar. */
     width: 20em;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 nav a {
     /* since <a> is different from other text attributes, it is configured already */
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 0% 5%; /* added spaces between each link */
+    cursor: pointer;
 }

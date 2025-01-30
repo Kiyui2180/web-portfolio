@@ -43,8 +43,6 @@ picture-div
 */
 .username-and-picture-div {
     text-align: center;
-
-    cursor: pointer;
 }
 #online-picture {
     /* Configured my online picture's size and cropped it to circle. */

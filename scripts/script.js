@@ -39,15 +39,6 @@ function SelectCertificatesDiv()
 
     document.getElementById("expand-tile").innerHTML = certificatesDivContent;
 }
-function SelectUserNameAndPictureDiv()
-{
-    selectedTileName = "username-and-picture-div";
-
-    TilesAndNavScale();
-    SelectedTileColdFunction();
-
-    document.getElementById("expand-tile").innerHTML = placeholderDiv; // Add a unique expanding tile here.
-}
 function SelectTechStackDiv()
 {
     selectedTileName = "tech-stack-div";
@@ -85,6 +76,31 @@ function SelectProfessionalReferencesDiv()
     document.getElementById("expand-tile").innerHTML = placeholderDiv;
 }
 
+
+
+//
+// Navigation Bar's Functions
+//
+
+
+function ViewHome() 
+{
+    document.getElementById("tiles-container").scrollIntoView({ 
+        behavior: "smooth" 
+    });
+}
+function ViewProjects()
+{
+    document.getElementById("projects-container").scrollIntoView({ 
+        behavior: "smooth" 
+    });
+}
+function ViewContact()
+{
+    document.getElementById("contact-container").scrollIntoView({ 
+        behavior: "smooth" 
+    });
+}
 
 
 //
@@ -284,7 +300,7 @@ function NavBarToBack()
         it gets bigger by 1-5 pixels, but not really visible unless looked at and 
         not too sure as well. -->
         <div onclick="UndoTilesAndNav()">
-            <a href="#">Back</a>
+            <a>Back</a>
         </div>
     `;
 
@@ -320,9 +336,9 @@ function NavBarToBack()
 }
 function UndoNavBar()
 {
-    const navBar_A_s_1 = `<a href="#">Home</a>`;
-    const navBar_A_s_2 = ` <a href="#">Projects</a>`;
-    const navBar_A_s_3 = ` <a href="#">Contact</a>`;
+    const navBar_A_s_1 = `<a onclick="ViewHome()">Home</a>`;
+    const navBar_A_s_2 = `<a onclick="ViewProjects()">Projects</a>`;
+    const navBar_A_s_3 = `<a onclick="ViewContact()">Contact</a>`;
 
     // Added sleep so it doesn't make the navigation bar big from the start as 
     // the elements inside are three texts. Appending the elements one by one instead.
@@ -386,7 +402,10 @@ function CheckScreenSize()
     }
 }
 
+
+//
 // main method
+//
 // Load upon start of web portfolio.
 alert("Web Portfolio is still under development, expect some unoptimized screen sizes and missing contents, thank you for your patience! Click [OK] to view page anyway.\n— Euge Kyle");
 
