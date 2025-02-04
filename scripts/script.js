@@ -448,6 +448,6 @@ function LinkedInClickContactDiv() {
 // main method
 //
 // Load upon start of web portfolio.
-// alert("Web Portfolio is still under development, expect some unoptimized screen sizes and missing contents, thank you for your patience! Click [OK] to view page anyway.\n— Euge Kyle");
+alert("Expect some unoptimized screen sizes and missing contents, I'm still working on my web portfolio, thank you for your patience! Click [OK] to view page anyway.\n— Euge Kyle");
 
 CheckScreenSize();
