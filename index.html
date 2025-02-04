@@ -10,13 +10,14 @@
         <link rel="stylesheet" href="styles/init-tiles-styles.css">
         <link rel="stylesheet" href="styles/tiles-styles.css">
         <link rel="stylesheet" href="styles/init-expanded-tile.css">
+        <link rel="stylesheet" href="styles/contact/contact-styles.css">
         <link rel="stylesheet" href="styles/custom-styles.css">
         <link rel="stylesheet" href="styles/animations.css">
         <link rel="stylesheet" href="styles/screen-sizes.css">
 
         <!-- scripts -->
         <script type="text/javascript" src="scripts/script.js"></script>
-        <script type="text/javascript" src="scripts/KiyuiLibrary.js"></script>
+        <script type="text/javascript" src="scripts/CustomLibrary.js"></script>
         <script type="text/javascript" src="scripts/ExpandedTilesContents.js"></script>
 
         <title>Euge Kyle: Creativity and Technology</title>
@@ -25,16 +26,13 @@
     </head>
     <body>
         <main>
-            <!-- 
-                navigation bar
-            -->
+            <!-- navigation bar -->
             <nav class="add-border-radius-with-bg nav-bar" id="nav-bar">
                 <a onclick="ViewHome()">Home</a>
                 <a onclick="ViewProjects()">Projects</a>
                 <a onclick="ViewContact()">Contact</a>
             </nav>
-            
-            
+             
             <div class="main-container">
                 <!-- Tiles -->
                 <div class="tiles-container" id="tiles-container">
@@ -77,7 +75,7 @@
                                     <a href="https://github.com/Kiyui2180">
                                         <img src="resources/github-logo.png" alt="github-logo">
                                     </a>
-                                    <a href="#">
+                                    <a href="https://www.linkedin.com/in/euge-kyle-fabella-782b9834a/">
                                         <img src="resources/linkedin-icon.png" alt="linkedin-icon">
                                     </a>
                                 </div>
@@ -174,15 +172,40 @@
                 
                 <!-- Contact -->
                 <div class="contact-container" id="contact-container">
-                    <section class="contact center-this-div add-border-radius-with-bg center-elements-inside">
+                    <section class="contact center-this-div add-border-radius-with-bg">
                         <h1>
                             Contact
                         </h1>
-                        <h2>
-                            Please wait, the content will be added soon; I am working on it! :D
-                            <br>
-                            For my email and phone number, please refer to my resume for the meantime.
-                        </h2>
+                        
+                        <div class="contact-sub-container add-border-radius-with-bg center-elements-inside center-this-div">
+                            <div class="email-add contact-child-container add-border-radius-with-bg" onclick="ClipEmailAddress()">
+                                <h2>
+                                    E-Mail Address
+                                </h2>
+                                <p>Click here to copy.</p>
+                            </div>
+                            <div class="phone-num contact-child-container add-border-radius-with-bg">
+                                <h2>
+                                    Phone Number
+                                </h2>
+                                <p>Please refer to my resume.</p>
+                            </div>
+                            <div class="signal-username contact-child-container add-border-radius-with-bg">
+                                <h2>
+                                    Signal Account
+                                </h2>
+                                <p>Available upon request.</p>
+                            </div>
+                            <div class="linkedin-account contact-child-container add-border-radius-with-bg" onclick="LinkedInClickContactDiv()">
+                                <h2>
+                                    Linkedin
+                                </h2>
+                                <p>Click here.</p>
+                            </div>
+                            <div class="contact-picture-of-me contact-child-container add-border-radius-with-bg">
+                                <img src="resources/picture-of-me.jpg" alt="picture-of-me">
+                            </div>
+                        </div>
                     </section>
                 </div>
                 
@@ -192,7 +215,7 @@
 
         <!-- Below is the div for the tiles to use to present its content. -->
         <div class="expand-tile add-border-radius-with-bg center-this-div-absolutely" id="expand-tile">
-            
+          
         </div>
 
         <!-- 
@@ -214,10 +237,14 @@
             Dev note:
             - Fix the nav-bar scripts, why is there a nav-bar inline if I undid the changes. 
             Refer to inspecting element.
-            - Verify [certificates-div]'s script, make it more consistent. 
             - In [education-div], add description on each schools. [ctrl + f] then type "FIX".
-            - fix the nav bar shrinking then going to normal after getting filled up by words.
             - fix nav bar after clicking a tile, the elements after clicking back makes the elements near one another slightly
+            - fix [options-icons] on [education-div], the remaining icons should be smallen when you select an icon. It is semi-fixed but by default,
+            it should select sti.
+            - fix [education-div] on [script.js], it should remove styles so prevent piling up of appended styles.
+            - go to [contact-div] and redo the design.
+                - change the main picture to something else, it should be animated like a slideshow, get more pictures.
+            
         -->
     </body>
 </html>

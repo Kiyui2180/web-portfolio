@@ -102,7 +102,7 @@ const certificatesDivContent =
 // Recheck this one.
 const educationDivContent =
 `
-    <h1 class="center-elements-inside">
+  <h1 class="center-elements-inside">
         Educations
     </h1>
 
@@ -112,10 +112,10 @@ const educationDivContent =
         Santa Rosa.        
     -->
     <div class="container center-elements-inside add-border-radius-with-bg">
-        <div class="img-viewer center-elements-inside">
-            <div class="education-description" id="education-description">
-                <!-- Left empty for dynamic input and output of information -->
-            </div>
+        <div class="sub-container center-elements-inside" id="sub-container">
+            <h2 id="education-description">
+                Batch of 2021-2025 (Graduating)<br>Program: Bachelor of Science in Information Technology
+            </h2>
             <img src="resources/educations/sti.jpg" 
             alt="sti-img"  id="img-viewer">
         </div>
@@ -124,19 +124,13 @@ const educationDivContent =
             College: STI College Santa Rosa
         </h2>
         
-        <div class="options-icons">
-            <div class="sti" onclick="ViewSTICollege()">
-                <img src="resources/educations/sti.jpg" 
-                alt="sti-img" >
-            </div>
-            <div class="mcl" onclick="ViewMCLCollege()">
-                <img src="resources/educations/mcl.png" 
-                alt="mcl-img">
-            </div>
-            <div class="practicum" onclick="ViewPracticum()">
-                <img src="resources/educations/practicum.jpg" 
-                alt="practicum-img">
-            </div>
+        <div class="options-icons" id="options-icons">
+            <img src="resources/educations/sti.jpg" 
+                alt="sti-img" id="sti-icon" onclick="ViewSTICollege()">
+            <img src="resources/educations/mcl.png" 
+                alt="mcl-img" id="mcl-icon" onclick="ViewMCLCollege()">
+            <img src="resources/educations/practicum.jpg" 
+                alt="practicum-img" id="ojt-icon" onclick="ViewPracticum()">
         </div>
     </div>
 
@@ -147,14 +141,15 @@ const educationDivContent =
             padding: 1.5em 0em;
             margin: auto;
         }
-        .img-viewer {
+        .sub-container {
             position: relative;
         }
-        .img-viewer img {
+        .sub-container img {
             height: 30vh;
             width: 45vw;
             object-fit: cover;
             border-radius: 40px;
+            transition: 0.25s;
         }
         .options-icons {
             display: flex;
@@ -169,18 +164,31 @@ const educationDivContent =
             padding: 0em 2em;
             cursor: pointer;
             transition: 0.25s;
+            opacity: 0.5;
         }
         .options-icons img:hover {
-            transform: scale(1.16);
+            transform: scale(1.15);
         }
-        
-        /* 
-            Work on this soon. [FIX]
-            .education-description {
-                position: fixed;
-                text-align: left;
-            } 
-        */
+        #education-description {
+            position: absolute;
+
+            text-align: center;
+            align-content: center;
+            color: rgba(0, 0, 0, 0);
+            z-index: 2;
+        }
+        #sti-icon {
+            opacity: 1;
+            transform: scale(1.25);
+        }
+        .sub-container:hover h2 {
+            color: rgb(255, 255, 255) !important;
+
+        }
+        .sub-container:hover img {
+            transform: scale(1.025);
+            opacity: 0.25;
+        }
     </style>
 `;
 

@@ -1,0 +1,65 @@
+.contact {
+    width: 80%;
+    height: 70%;
+    overflow: hidden;
+    text-align: center;
+    background-image: url("https://www.minimaldesksetups.com/wp-content/uploads/2021/06/175870566_821692705405057_8076442475726502893_n.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -270px;
+}
+
+.contact-sub-container {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: repeat(auto-fit, minmax(1em, 1fr));
+    grid-template-areas: 
+    "email-add signal-username contact-picture-of-me"
+    "phone-num linkedin-account contact-picture-of-me"
+    ;
+    height: 80%;
+    width: 80%;
+    gap: 1em;
+    padding: 1em;
+    overflow: hidden;
+}
+.contact div:not(img) {
+    opacity: 0.9;
+}
+
+.email-add, .phone-num, .signal-username, .linkedin-account {
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    cursor: pointer;
+}
+.email-add {
+    grid-area: email-add;
+}
+.phone-num {
+    grid-area: phone-num;
+}
+.signal-username {
+    grid-area: signal-username;
+}
+.linkedin-account {
+    grid-area: linkedin-account;
+}
+.contact-picture-of-me {
+    grid-area: contact-picture-of-me;
+    height: 90%;
+    width: 80%;
+    overflow: hidden;
+}
+.contact-picture-of-me img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.contact-child-container {
+    background-color: rgb(42, 42, 42) !important;
+    transition: 0.25s ease-in-out;
+}
+.contact-child-container:hover {
+    transform: scale(1.05);
+}

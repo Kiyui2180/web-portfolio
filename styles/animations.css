@@ -22,6 +22,15 @@ nav a:hover {
     color: gray;
 }
 
+/* 
+    Animation for the [username-and-picture-div]'s links and picture for a more dynamic approach 
+    and promotes feedback. 
+*/
+.social-links img:hover {
+    transform: scale(1.20);
+}
+
+
 /* On certain tile sizes, the animation zoom scales differently, so I added small 
 touches for better UI and UX. */
 .picture-div:hover, .certificates-div:hover, 
@@ -49,6 +58,7 @@ touches for better UI and UX. */
 */
 @keyframes img-viewer-select-animation {
     0% {
+        pointer-events: none;
         width: 45vw;
     }
     50% {

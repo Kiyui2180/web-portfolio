@@ -23,6 +23,7 @@ picture-div
     width: 20em;
     border-radius: 40px;
     object-fit: cover;
+    transition: 0.25s ease-in-out;
 }
 
 /*
@@ -49,12 +50,14 @@ picture-div
     height: 8em;
     width: 8em;
     border-radius: 50%;
+    transition: 0.25s ease-in-out;
 }
 .social-links img {
     /* Cropped the social media platforms' icons and configured its cursor to hand pointer. */
-    height: 3em;
-    width: 3em;
+    height: 3.5em;
+    width: 3.5em;
     cursor: pointer; 
+    transition: 0.25s ease-in-out;
 }
 .social-links a {
     /* Removed the <a>'s default appearance and turned it invisible. */

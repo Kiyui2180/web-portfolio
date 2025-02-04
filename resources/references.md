@@ -14,7 +14,7 @@
 - <a href="https://www.flaticon.com/free-icons/communication" title="communication icons">Communication icons created by Eucalyp - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/leadership" title="leadership icons">Leadership icons created by Becris - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/collaboration" title="collaboration icons">Collaboration icons created by Freepik - Flaticon</a>
-- 
+- https://www.freepik.com/free-photo/top-view-arrangement-natural-material-stationery_13182476.htm#from_view=detail_alsolike
 - 
 - 
 - 
