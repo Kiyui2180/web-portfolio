@@ -438,7 +438,7 @@ function CheckScreenSize() {
     }
 }
 function ClipEmailAddress() {
-    navigator.clipboard.writeText("contactekof.channel850@slmail.me");
+    navigator.clipboard.writeText("ekof08@gmail.com");
 }
 function LinkedInClickContactDiv() {
     window.open("https://www.linkedin.com/in/euge-kyle-fabella-782b9834a/").focus();
