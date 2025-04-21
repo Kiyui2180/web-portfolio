@@ -102,7 +102,7 @@ const certificatesDivContent =
 // Recheck this one.
 const educationDivContent =
 `
-  <h1 class="center-elements-inside">
+    <h1 class="center-elements-inside">
         Educations
     </h1>
 
@@ -188,6 +188,14 @@ const educationDivContent =
         .sub-container:hover img {
             transform: scale(1.025);
             opacity: 0.25;
+        }
+
+        /* 
+            Since this content is part of education-div, it'll also be removed whenever it 
+            goes back to the tiles-page. [FIX]
+        */
+        .expand-tile {
+            overflow: hidden;
         }
     </style>
 `;

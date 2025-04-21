@@ -147,7 +147,7 @@ function ViewPracticum() {
         document.getElementById("img-viewer").src = "resources/educations/practicum.jpg";
         document.getElementById("education-title").innerHTML = `IT Practicum: Obtaining Internship...`;
         document.getElementById("education-description").innerHTML = `It could be your organization soon! :D`;
-         
+
         return Sleep(750);
     }).then(() => {
         document.head.removeChild(imgViewer);
@@ -448,6 +448,6 @@ function LinkedInClickContactDiv() {
 // main method
 //
 // Load upon start of web portfolio.
-alert("Expect some unoptimized screen sizes and missing contents, I'm still working on my web portfolio, thank you for your patience! Click [OK] to view page anyway.\n— Euge Kyle");
+//alert("Expect some unoptimized screen sizes and missing contents, I'm still working on my web portfolio, thank you for your patience! Click [OK] to view page anyway.\n— Euge Kyle");
 
 CheckScreenSize();

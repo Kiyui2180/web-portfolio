@@ -1,6 +1,9 @@
 /* Phone screen sizes. */
 @media (max-width: 600px) {
-    
+    /* Overhaul for mobile mode. */
+    /* body {
+        
+    } */
 }
 
 /* Tablet screen sizes. */
@@ -11,18 +14,20 @@
 }
 
 /* Laptop screen sizes. */
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1400px) {
     body {
-        font-size: 0.75rem;
+        font-size: 0.70rem;
     }
 
-    img {
-        /* height: 90% !important;
-        width: 70% !important; */
-    }
+    /* img {
+        height: 90% !important;
+        width: 70% !important;
+    } */
 }
 
-/* Desktop? */
-@media (min-width: 1201px) {
-    
+/* Desktop */
+@media (min-width: 1500px) {
+    body {
+        font-size: 1rem;
+    }
 }

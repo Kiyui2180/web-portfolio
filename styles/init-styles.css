@@ -22,7 +22,7 @@ body {
     /* Main font color of the whole webpage. */
     color: white;
     /* Animation whenever the site is visited. */
-    animation: page-load-fadein 1.25s ease-in-out;
+    animation: page-load-fadein 0s ease-in-out;
     
     /* Main font size of the webpage. */
     font-size: 1rem;
