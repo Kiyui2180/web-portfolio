@@ -116,7 +116,7 @@ function ViewSTICollege() {
     Sleep([750]).then(() => {
         document.getElementById("img-viewer").src = "resources/educations/sti.jpg";
         document.getElementById("education-title").innerHTML = `College: STI College Santa Rosa`;
-        document.getElementById("education-description").innerHTML = `Batch of 2021-2025 (Graduating)<br>Program: Bachelor of Science in Information Technology`;
+        document.getElementById("education-description").innerHTML = `Batch of 2021-2025 (Graduated)<br>Program: Bachelor of Science in Information Technology`;
 
         return Sleep(750);
     }).then(() => {
@@ -144,9 +144,9 @@ function ViewPracticum() {
     SelectedEducationIcon("ojt-icon");
 
     Sleep([750]).then(() => {
-        document.getElementById("img-viewer").src = "resources/educations/practicum.jpg";
-        document.getElementById("education-title").innerHTML = `IT Practicum: Obtaining Internship...`;
-        document.getElementById("education-description").innerHTML = `It could be your organization soon! :D`;
+        document.getElementById("img-viewer").src = "resources/educations/tmi.jpg";
+        document.getElementById("education-title").innerHTML = `IT Practicum: Toyota Makati, Inc. (TMI)`;
+        document.getElementById("education-description").innerHTML = `Internship Duration: March 10, 2025 to June 7, 2025<br>Role: IT Support Intern`;
          
         return Sleep(750);
     }).then(() => {
@@ -438,7 +438,7 @@ function CheckScreenSize() {
     }
 }
 function ClipEmailAddress() {
-    navigator.clipboard.writeText("ekof08@gmail.com");
+    navigator.clipboard.writeText("eugekyle.fabella@outlook.com");
 }
 function LinkedInClickContactDiv() {
     window.open("https://www.linkedin.com/in/euge-kyle-fabella-782b9834a/").focus();
@@ -448,6 +448,6 @@ function LinkedInClickContactDiv() {
 // main method
 //
 // Load upon start of web portfolio.
-alert("Expect some unoptimized screen sizes and missing contents, I'm still working on my web portfolio, thank you for your patience! Click [OK] to view page anyway.\n— Euge Kyle");
+alert("Expect some unoptimized screen sizes and missing contents, I'm still working on my web portfolio, thank you for your patience! Click [OK] to view page anyway.\n— Euge Kyle\n\nLast update: July 25, 2025");
 
 CheckScreenSize();

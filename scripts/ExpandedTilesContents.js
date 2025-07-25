@@ -88,7 +88,6 @@ const certificatesDivContent =
             height: 100%;
             width: 80%;
 
-            /* 
                 Not using [.add-border-radius-with-bg] because it's a custom style in class
                 and can't be implemented in .css directly. And even if I did, I have to do it 
                 one by one, a little unproductive, so just implemented it here.
@@ -102,7 +101,7 @@ const certificatesDivContent =
 // Recheck this one.
 const educationDivContent =
 `
-  <h1 class="center-elements-inside">
+    <h1 class="center-elements-inside">
         Educations
     </h1>
 
@@ -114,7 +113,7 @@ const educationDivContent =
     <div class="container center-elements-inside add-border-radius-with-bg">
         <div class="sub-container center-elements-inside" id="sub-container">
             <h2 id="education-description">
-                Batch of 2021-2025 (Graduating)<br>Program: Bachelor of Science in Information Technology
+                Batch of 2021-2025 (Graduated)<br>Program: Bachelor of Science in Information Technology
             </h2>
             <img src="resources/educations/sti.jpg" 
             alt="sti-img"  id="img-viewer">
@@ -129,7 +128,7 @@ const educationDivContent =
                 alt="sti-img" id="sti-icon" onclick="ViewSTICollege()">
             <img src="resources/educations/mcl.png" 
                 alt="mcl-img" id="mcl-icon" onclick="ViewMCLCollege()">
-            <img src="resources/educations/practicum.jpg" 
+            <img src="resources/educations/tmi.jpg" 
                 alt="practicum-img" id="ojt-icon" onclick="ViewPracticum()">
         </div>
     </div>
