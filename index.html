@@ -5,23 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- stylesheets -->
-        <link rel="stylesheet" href="styles/init-styles.css">
-        <link rel="stylesheet" href="styles/navigation-bar-styles.css">
-        <link rel="stylesheet" href="styles/init-tiles-styles.css">
-        <link rel="stylesheet" href="styles/tiles-styles.css">
-        <link rel="stylesheet" href="styles/init-expanded-tile.css">
-        <link rel="stylesheet" href="styles/contact/contact-styles.css">
-        <link rel="stylesheet" href="styles/custom-styles.css">
-        <link rel="stylesheet" href="styles/animations.css">
-        <link rel="stylesheet" href="styles/screen-sizes.css">
+        <link rel="stylesheet" text="text/css" href="styles/init-styles.css">
+        <link rel="stylesheet" text="text/css" href="styles/navigation-bar-styles.css">
+        <link rel="stylesheet" text="text/css" href="styles/init-tiles-styles.css">
+        <link rel="stylesheet" text="text/css" href="styles/tiles-styles.css">
+        <link rel="stylesheet" text="text/css" href="styles/init-expanded-tile.css">
+        <link rel="stylesheet" text="text/css" href="styles/contact/contact-styles.css">
+        <link rel="stylesheet" text="text/css" href="styles/custom-styles.css">
+        <link rel="stylesheet" text="text/css" href="styles/animations.css">
+        <link rel="stylesheet" text="text/css" href="styles/screen-sizes.css">
 
         <!-- scripts -->
-        <script type="text/javascript" src="scripts/script.js"></script>
-        <script type="text/javascript" src="scripts/CustomLibrary.js"></script>
-        <script type="text/javascript" src="scripts/ExpandedTilesContents.js"></script>
+        <script type="text/javascript" type="script" src="scripts/script.js"></script>
+        <script type="text/javascript" type="script" src="scripts/CustomLibrary.js"></script>
+        <script type="text/javascript" type="script" src="scripts/ExpandedTilesContents.js"></script>
 
         <title>Euge Kyle: Creativity and Technology</title>
-
 
     </head>
     <body>
@@ -57,10 +56,10 @@
                         </div>
         
                         <!-- 
-                            certificates-div
+                            professional-development-div
                         -->
-                        <div class="certificates-div center-elements-inside add-border-radius-with-bg" id="certificates-div" onclick="SelectCertificatesDiv()">
-                            <h2>Certificates</h2>
+                        <div class="professional-development-div center-elements-inside add-border-radius-with-bg" id="professional-development-div" onclick="SelectProfessionalDevelopmentDiv()">
+                            <h2>Professional Development (Credentials)</h2>
                         </div>
         
                         <!-- 
@@ -139,11 +138,11 @@
                         </div>
         
                         <!-- 
-                            education-div
+                            education-and-experiences-div
                         -->
-                        <div class="education-div center-elements-inside add-border-radius-with-bg" id="education-div" onclick="SelectEducationDiv()">
+                        <div class="education-and-experiences-div center-elements-inside add-border-radius-with-bg" id="education-and-experiences-div" onclick="SelectEducationAndExperiencesDiv()">
                             <h2>
-                                Education
+                                Education & Experiences
                             </h2>
                         </div>
         
@@ -218,6 +217,9 @@
 
         </div>
 
+        <!-- [Font Awesome] API script -->
+        <script src="https://kit.fontawesome.com/7a061d2f2b.js" crossorigin="anonymous"></script>
+
         <!-- 
             Before pushing, make sure to go to [init-expanded-tile.css] and modify the following settings:
             .expand-tile {
@@ -230,21 +232,21 @@
 
             Also go to [init-styles.css] and change back page-load-in to 1.25s.
 
-            Finally, make sure to uncomment the [alert] property prompt, which is usually at the end of [script.js].
+            Finally, make sure to uncomment the [alert] and [CheckScreenSize()] property prompt, which is usually at the end of [script.js].
         -->
 
         <!-- 
             Dev note:
             - Fix the nav-bar scripts, why is there a nav-bar inline if I undid the changes. 
             Refer to inspecting element.
-            - In [education-div], add description on each schools. [ctrl + f] then type "FIX".
+            - In [education-and-experiences-div], add description on each schools. [ctrl + f] then type "FIX".
             - fix nav bar after clicking a tile, the elements after clicking back makes the elements near one another slightly
-            - fix [options-icons] on [education-div], the remaining icons should be smallen when you select an icon. It is semi-fixed but by default,
+            - fix [options-icons] on [education-and-experiences-div], the remaining icons should be smallen when you select an icon. It is semi-fixed but by default,
             it should select sti.
-            - fix [education-div] on [script.js], it should remove styles so prevent piling up of appended styles.
+            - fix [education-and-experiences-div] on [script.js], it should remove styles so prevent piling up of appended styles.
             - go to [contact-div] and redo the design.
                 - change the main picture to something else, it should be animated like a slideshow, get more pictures.
-            - in [education-div] fix image placement. must be able to see tmi name
+            - in [education-and-experiences-div] fix image placement. must be able to see tmi name
             
         -->
     </body>

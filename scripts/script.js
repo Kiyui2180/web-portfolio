@@ -28,14 +28,14 @@ function SelectAboutMeDiv() {
     // whatever the tile is selected.
     document.getElementById("expand-tile").innerHTML = aboutMeDivContent;
 }
-// Function for clicking the [certificates-div].
-function SelectCertificatesDiv() {
-    selectedTileName = "certificates-div";
+// Function for clicking the [professional-development-div].
+function SelectProfessionalDevelopmentDiv() {
+    selectedTileName = "professional-development-div";
 
     TilesAndNavScale();
     SelectedTileColdFunction();
 
-    document.getElementById("expand-tile").innerHTML = certificatesDivContent;
+    document.getElementById("expand-tile").innerHTML = professionalDevelopmentDivContent;
 }
 function SelectTechStackDiv() {
     selectedTileName = "tech-stack-div";
@@ -53,13 +53,13 @@ function SelectSkillsDiv() {
 
     document.getElementById("expand-tile").innerHTML = skillsDivContent;
 }
-function SelectEducationDiv() {
-    selectedTileName = "education-div";
+function SelectEducationAndExperiencesDiv() {
+    selectedTileName = "education-and-experiences-div";
 
     TilesAndNavScale();
     SelectedTileColdFunction();
 
-    document.getElementById("expand-tile").innerHTML = educationDivContent;
+    document.getElementById("expand-tile").innerHTML = educationAndExperiencesDivContent;
 }
 function SelectProfessionalReferencesDiv() {
     selectedTileName = "professional-references-div";
@@ -96,18 +96,18 @@ function ViewContact() {
 //
 // expanding tiles scripts
 //
-// These functions are used for tiles that are more dynamic such as the [education-div] and [references-div].
+// These functions are used for tiles that are more dynamic such as the [education-and-experiences-div] and [references-div].
 // Since you can only append html and css modifications in [.innerHTML], I have thought of placing it here instead.
 
-// education-div [FIX]
+// education-and-experiences-div [FIX]
 let imgViewer = document.createElement("style");
 let selectedEducationIcon = document.createElement("style");
 
 function ViewSTICollege() {    
     // Calling the [Education_IMGViewerSelectAnimation] function to display a transition animation whenever a user 
-    // clicks on a picture. This applies to all functions in the [education-div].
-    Education_IMGViewerSelectAnimation();
-    SelectedEducationIcon("sti-icon");
+    // clicks on a picture. This applies to all functions in the [education-and-experiences-div].
+    EducationAndExperiences_IMGViewerSelectAnimation();
+    SelectedEducationAndExperiencesIcon("sti-icon");
     
     // I delayed the change of the [#img-viewer]'s [img] to 750ms so that when the [img] gets to [width: 0vw;], it'll 
     // transition smoothly. Finally, after 500ms, it'll wait another 750ms to execute the last line of code; this line 
@@ -115,46 +115,61 @@ function ViewSTICollege() {
     // stack up to another.  
     Sleep([750]).then(() => {
         document.getElementById("img-viewer").src = "resources/educations/sti.jpg";
-        document.getElementById("education-title").innerHTML = `College: STI College Santa Rosa`;
-        document.getElementById("education-description").innerHTML = `Batch of 2021-2025 (Graduated)<br>Program: Bachelor of Science in Information Technology`;
+        document.getElementById("education-and-experiences-title").innerHTML = `College: STI College Santa Rosa`;
+        document.getElementById("education-and-experiences-description").innerHTML = `Batch of 2021-2025 (Graduated)<br>Program: Bachelor of Science in Information Technology`;
 
         return Sleep(750);
     }).then(() => {
         document.head.removeChild(imgViewer);
-        RemoveStyleEducationDiv();
+        RemoveStyleEducationAndExperiencesDiv();
     });
 }
 function ViewMCLCollege() {
-    Education_IMGViewerSelectAnimation();
-    SelectedEducationIcon("mcl-icon");
+    EducationAndExperiences_IMGViewerSelectAnimation();
+    SelectedEducationAndExperiencesIcon("mcl-icon");
     
     Sleep([750]).then(() => {
         document.getElementById("img-viewer").src = "resources/educations/mcl.png";
-        document.getElementById("education-title").innerHTML = `Senior High School: Mapua Malayan Colleges Laguna`;
-        document.getElementById("education-description").innerHTML = `Batch of 2018-2020 (Graduated)<br>Strand: Pre-Baccalaureate Maritime`;
+        document.getElementById("education-and-experiences-title").innerHTML = `Senior High School: Mapua Malayan Colleges Laguna`;
+        document.getElementById("education-and-experiences-description").innerHTML = `Batch of 2018-2020 (Graduated)<br>Strand: Pre-Baccalaureate Maritime`;
 
         return Sleep(750);
     }).then(() => {
         document.head.removeChild(imgViewer);
-        RemoveStyleEducationDiv();
+        RemoveStyleEducationAndExperiencesDiv();
     });
 }
 function ViewPracticum() {
-    Education_IMGViewerSelectAnimation();
-    SelectedEducationIcon("ojt-icon");
+    EducationAndExperiences_IMGViewerSelectAnimation();
+    SelectedEducationAndExperiencesIcon("ojt-icon");
 
     Sleep([750]).then(() => {
         document.getElementById("img-viewer").src = "resources/educations/tmi.jpg";
-        document.getElementById("education-title").innerHTML = `IT Practicum: Toyota Makati, Inc. (TMI)`;
-        document.getElementById("education-description").innerHTML = `Internship Duration: March 10, 2025 to June 7, 2025<br>Role: IT Support Intern`;
+        document.getElementById("education-and-experiences-title").innerHTML = `IT Practicum: Toyota Makati, Inc. (TMI)`;
+        document.getElementById("education-and-experiences-description").innerHTML = `Internship Duration: March 10, 2025 to June 7, 2025<br>Role: IT Support Intern`;
          
         return Sleep(750);
     }).then(() => {
         document.head.removeChild(imgViewer);
-        RemoveStyleEducationDiv();
+        RemoveStyleEducationAndExperiencesDiv();
     });
 }
-function Education_IMGViewerSelectAnimation() {
+function ViewPlaceholder() {
+    EducationAndExperiences_IMGViewerSelectAnimation();
+    SelectedEducationAndExperiencesIcon("education-and-experiences-placeholder-icon");
+
+    Sleep([750]).then(() => {
+        document.getElementById("img-viewer").src = "resources/educations/education-and-experiences-placeholder.jpg";
+        document.getElementById("education-and-experiences-title").innerHTML = `Currently applying...`;
+        document.getElementById("education-and-experiences-description").innerHTML = `It could be your company here soon!`;
+         
+        return Sleep(750);
+    }).then(() => {
+        document.head.removeChild(imgViewer);
+        RemoveStyleEducationAndExperiencesDiv();
+    });
+}
+function EducationAndExperiences_IMGViewerSelectAnimation() {
     Sleep([0]).then(() => {
         imgViewer.innerHTML =
         `
@@ -206,7 +221,7 @@ function Education_IMGViewerSelectAnimation() {
         document.head.appendChild(imgViewer);
     }); 
 }
-function SelectedEducationIcon(input) {
+function SelectedEducationAndExperiencesIcon(input) {
     selectedEducationIcon.innerHTML = 
     `
         #${input} {
@@ -221,8 +236,8 @@ function SelectedEducationIcon(input) {
     `;
     document.head.appendChild(selectedEducationIcon); 
 }
-function RemoveStyleEducationDiv() {
-    document.querySelector("#sti-icon, #mcl-icon, #ojt-icon, #nav-bar").addEventListener("click", function() {
+function RemoveStyleEducationAndExperiencesDiv() {
+    document.querySelector("#sti-icon, #mcl-icon, #ojt-icon, #education-and-experiences-placeholder-icon, #nav-bar").addEventListener("click", function() {
         try {
             document.head.removeChild(selectedEducationIcon);
         }
@@ -448,6 +463,6 @@ function LinkedInClickContactDiv() {
 // main method
 //
 // Load upon start of web portfolio.
-alert("Expect some unoptimized screen sizes and missing contents, I'm still working on my web portfolio, thank you for your patience! Click [OK] to view page anyway.\n— Euge Kyle\n\nLast update: July 25, 2025");
+alert("Expect some unoptimized screen sizes and missing contents, I'm still working on my web portfolio, thank you for your patience! Click [OK] to view page anyway.\n— Euge Kyle\n\nLast update: August 25, 2025");
 
 CheckScreenSize();

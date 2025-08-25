@@ -36,16 +36,18 @@ const aboutMeDivContent =
     </p>
 `;
 
-// certificates-div
-const certificatesDivContent =
+// professional-development-div
+const professionalDevelopmentDivContent =
 `
     <!-- Go back here and recheck, don't like how it resizes. [FIX] -->
-    <h1 class="center-elements-inside">Certifcates</h1>
+    <h1 class="center-elements-inside">Professional Development<br>(Credentials)</h1>
 
     <div class="container">
         <div class="sub-container add-border-radius-with-bg center-elements-inside">
             <h2>
                 System Administration
+                <br>
+                (Certificate)
             </h2>
             <img src="resources/certificates/system-administration-img.png" 
             alt="system-administration-img">
@@ -54,20 +56,44 @@ const certificatesDivContent =
         <div class="sub-container add-border-radius-with-bg center-elements-inside">
             <h2>
                 Java Foundations
+                <br>
+                (Certificate)
             </h2>
             <img src="resources/certificates/java-foundations-img.png" 
-            alt="java-foundations-img">
+            alt="java-foundations-img"">
         </div>
 
         <div class="sub-container add-border-radius-with-bg center-elements-inside">
             <h2>
-                Obtaining more certificates...
+                Zuitt: Basic Web Development Workshop
+                <br>
+                (Certificate - Acquiring...)
+            </h2>
+            <img src="resources/certificates/certificate-img-placeholder.png" 
+            alt="Zuitt-Basic-Web-Development-Workshop-Certificate-img"
+            class="learning"">
+        </div>
+
+        <div class="sub-container add-border-radius-with-bg center-elements-inside">
+            <h2>
+                Net Academy: Introduction to Cybersecurity
+                <br>
+                (Badge - Acquiring...)
+            </h2>
+            <img src="https://www.netacad.com/p/ff9e491c-49be-4734-803e-a79e6e83dab1/badges/badge-images/introduction_to_cybersecurity_16.png" 
+            alt="introduction-to-cybersecurity-badge-img"
+            class="learning"">
+        </div>
+
+        <div class="sub-container add-border-radius-with-bg center-elements-inside">
+            <h2>
+                Obtaining more professional development...
             </h2>
         </div>
 
         <div class="sub-container add-border-radius-with-bg center-elements-inside">
             <h2>
-                Obtaining more certificates...
+                Obtaining more professional development...
             </h2>
         </div>
     </div>
@@ -85,24 +111,36 @@ const certificatesDivContent =
         }
 
         .sub-container img {
-            height: 100%;
-            width: 80%;
+            height: 40vh;
+            width: 25vw;
 
-                Not using [.add-border-radius-with-bg] because it's a custom style in class
-                and can't be implemented in .css directly. And even if I did, I have to do it 
+            /*
+                Not using [.add-border-radius-with-bg] class attribute from custom styles because it's a custom style in a separate class
+                and can't be implemented in this [].css] directly. And even if I did, I have to do it 
                 one by one, a little unproductive, so just implemented it here.
             */
+            /* 
+                Since credentials has different sizes, I'll just manually adjust its sizes for a better fitting. 
+            */
             border-radius: 40px;
+        }
+        
+        h1, h2 {
+            text-align: center;
+        }
+
+        .learning {
+            filter: blur(5px);
         }
     </style>
 `;
 
-// education-div
+// education-and-experiences-div
 // Recheck this one.
-const educationDivContent =
+const educationAndExperiencesDivContent =
 `
     <h1 class="center-elements-inside">
-        Educations
+        Education & Experiences
     </h1>
 
     <!-- 
@@ -112,24 +150,29 @@ const educationDivContent =
     -->
     <div class="container center-elements-inside add-border-radius-with-bg">
         <div class="sub-container center-elements-inside" id="sub-container">
-            <h2 id="education-description">
+            <h2 id="education-and-experiences-description">
                 Batch of 2021-2025 (Graduated)<br>Program: Bachelor of Science in Information Technology
             </h2>
             <img src="resources/educations/sti.jpg" 
             alt="sti-img"  id="img-viewer">
         </div>
 
-        <h2 id="education-title">
+        <h2 id="education-and-experiences-title">
             College: STI College Santa Rosa
         </h2>
         
         <div class="options-icons" id="options-icons">
             <img src="resources/educations/sti.jpg" 
                 alt="sti-img" id="sti-icon" onclick="ViewSTICollege()">
+
             <img src="resources/educations/mcl.png" 
                 alt="mcl-img" id="mcl-icon" onclick="ViewMCLCollege()">
+
             <img src="resources/educations/tmi.jpg" 
                 alt="practicum-img" id="ojt-icon" onclick="ViewPracticum()">
+
+            <img src="resources/educations/education-and-experiences-placeholder.jpg" 
+            alt="education-and-experiences-placeholder-img" id="education-and-experiences-placeholder-icon" onclick="ViewPlaceholder()">
         </div>
     </div>
 
@@ -168,7 +211,7 @@ const educationDivContent =
         .options-icons img:hover {
             transform: scale(1.15);
         }
-        #education-description {
+        #education-and-experiences-description {
             position: absolute;
 
             text-align: center;

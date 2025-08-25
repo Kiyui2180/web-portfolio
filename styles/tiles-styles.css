@@ -27,9 +27,9 @@ picture-div
 }
 
 /*
-    certificates-div
+    professional-development-div
 */
-.certificates-div {
+.professional-development-div {
     text-align: center;
 
     cursor: pointer;
@@ -119,9 +119,9 @@ picture-div
 }
 
 /*  
-    educaton-div
+    .education-and-experiences-div
 */
-.education-div {
+.education-and-experiences-div {
     text-align: center;
 
     cursor: pointer;
