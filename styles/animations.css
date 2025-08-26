@@ -35,7 +35,7 @@ nav a:hover {
 touches for better UI and UX. */
 .picture-div:hover, .professional-development-div:hover, 
 .username-and-picture-div:hover, .quote-div:hover, .tech-stack-div:hover, 
-.skills-div:hover, .education-div:hover {
+.skills-div:hover, .educations-and-experiences-div:hover {
     transform: scale(1.025);
 }
 .about-me-div:hover {
@@ -48,13 +48,13 @@ touches for better UI and UX. */
 /* This is the animation of the tiles when hovered over by the cursor. */
 .about-me-div, .picture-div, .professional-development-div, 
 .username-and-picture-div, .quote-div, .tech-stack-div, .skills-div,
-.more-div, .professional-references-div, .education-div {
+.more-div, .professional-references-div, .educations-and-experiences-div {
     transition: 0.25s;
 }
 
 
 /* 
-    education-div
+    educations-and-experiences-div
 */
 @keyframes img-viewer-select-animation {
     0% {

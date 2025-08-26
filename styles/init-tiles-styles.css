@@ -16,7 +16,7 @@
         "about-me-box about-me-box about-me-box about-me-box picture-box picture-box"
         "certificates-and-badges-box certificates-and-badges-box username-and-picture-box username-and-picture-box picture-box picture-box"
         "tech-stack-box skills-box username-and-picture-box username-and-picture-box quote-box quote-box"
-        "tech-stack-box skills-box more-box education-box education-box professional-references-box"
+        "tech-stack-box skills-box more-box educations-and-experiences-box educations-and-experiences-box professional-references-box"
     ;
 
     /* I don't know why I used [rem] unit but since it's a legacy code and 
@@ -91,10 +91,10 @@
 }
 
 /* 
-    .education-and-experiences-div
+    .educations-and-experiences-div
 */
-.education-and-experiences-div {
-    grid-area: education-box;
+.educations-and-experiences-div {
+    grid-area: educations-and-experiences-box;
 }
 
 /* 

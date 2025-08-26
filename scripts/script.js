@@ -53,13 +53,13 @@ function SelectSkillsDiv() {
 
     document.getElementById("expand-tile").innerHTML = skillsDivContent;
 }
-function SelectEducationAndExperiencesDiv() {
-    selectedTileName = "education-and-experiences-div";
+function SelectEducationsAndExperiencesDiv() {
+    selectedTileName = "educations-and-experiences-div";
 
     TilesAndNavScale();
     SelectedTileColdFunction();
 
-    document.getElementById("expand-tile").innerHTML = educationAndExperiencesDivContent;
+    document.getElementById("expand-tile").innerHTML = educationsAndExperiencesDivContent;
 }
 function SelectProfessionalReferencesDiv() {
     selectedTileName = "professional-references-div";
@@ -96,80 +96,80 @@ function ViewContact() {
 //
 // expanding tiles scripts
 //
-// These functions are used for tiles that are more dynamic such as the [education-and-experiences-div] and [references-div].
+// These functions are used for tiles that are more dynamic such as the [educations-and-experiences-div] and [references-div].
 // Since you can only append html and css modifications in [.innerHTML], I have thought of placing it here instead.
 
-// education-and-experiences-div [FIX]
+// educations-and-experiences-div [FIX]
 let imgViewer = document.createElement("style");
-let selectedEducationIcon = document.createElement("style");
+let selectedEducationsAndExperiencesIcon = document.createElement("style");
 
 function ViewSTICollege() {    
-    // Calling the [Education_IMGViewerSelectAnimation] function to display a transition animation whenever a user 
-    // clicks on a picture. This applies to all functions in the [education-and-experiences-div].
-    EducationAndExperiences_IMGViewerSelectAnimation();
-    SelectedEducationAndExperiencesIcon("sti-icon");
+    // Calling the [Educations_IMGViewerSelectAnimation] function to display a transition animation whenever a user 
+    // clicks on a picture. This applies to all functions in the [educations-and-experiences-div].
+    EducationsAndExperiences_IMGViewerSelectAnimation();
+    SelectedEducationsAndExperiencesIcon("sti-icon");
     
     // I delayed the change of the [#img-viewer]'s [img] to 750ms so that when the [img] gets to [width: 0vw;], it'll 
     // transition smoothly. Finally, after 500ms, it'll wait another 750ms to execute the last line of code; this line 
     // of code is to remove the added style in [head], so whenever the viewer clicks on another picture, the styles won't 
     // stack up to another.  
     Sleep([750]).then(() => {
-        document.getElementById("img-viewer").src = "resources/educations/sti.jpg";
-        document.getElementById("education-and-experiences-title").innerHTML = `College: STI College Santa Rosa`;
-        document.getElementById("education-and-experiences-description").innerHTML = `Batch of 2021-2025 (Graduated)<br>Program: Bachelor of Science in Information Technology`;
+        document.getElementById("img-viewer").src = "resources/educations-and-experiences/sti.jpg";
+        document.getElementById("educations-and-experiences-title").innerHTML = `College: STI College Santa Rosa`;
+        document.getElementById("educations-and-experiences-description").innerHTML = `Batch of 2021-2025 (Graduated)<br>Program: Bachelor of Science in Information Technology`;
 
         return Sleep(750);
     }).then(() => {
         document.head.removeChild(imgViewer);
-        RemoveStyleEducationAndExperiencesDiv();
+        RemoveStyleEducationsAndExperiencesDiv();
     });
 }
 function ViewMCLCollege() {
-    EducationAndExperiences_IMGViewerSelectAnimation();
-    SelectedEducationAndExperiencesIcon("mcl-icon");
+    EducationsAndExperiences_IMGViewerSelectAnimation();
+    SelectedEducationsAndExperiencesIcon("mcl-icon");
     
     Sleep([750]).then(() => {
-        document.getElementById("img-viewer").src = "resources/educations/mcl.png";
-        document.getElementById("education-and-experiences-title").innerHTML = `Senior High School: Mapua Malayan Colleges Laguna`;
-        document.getElementById("education-and-experiences-description").innerHTML = `Batch of 2018-2020 (Graduated)<br>Strand: Pre-Baccalaureate Maritime`;
+        document.getElementById("img-viewer").src = "resources/educations-and-experiences/mcl.png";
+        document.getElementById("educations-and-experiences-title").innerHTML = `Senior High School: Mapua Malayan Colleges Laguna`;
+        document.getElementById("educations-and-experiences-description").innerHTML = `Batch of 2018-2020 (Graduated)<br>Strand: Pre-Baccalaureate Maritime`;
 
         return Sleep(750);
     }).then(() => {
         document.head.removeChild(imgViewer);
-        RemoveStyleEducationAndExperiencesDiv();
+        RemoveStyleEducationsAndExperiencesDiv();
     });
 }
 function ViewPracticum() {
-    EducationAndExperiences_IMGViewerSelectAnimation();
-    SelectedEducationAndExperiencesIcon("ojt-icon");
+    EducationsAndExperiences_IMGViewerSelectAnimation();
+    SelectedEducationsAndExperiencesIcon("ojt-icon");
 
     Sleep([750]).then(() => {
-        document.getElementById("img-viewer").src = "resources/educations/tmi.jpg";
-        document.getElementById("education-and-experiences-title").innerHTML = `IT Practicum: Toyota Makati, Inc. (TMI)`;
-        document.getElementById("education-and-experiences-description").innerHTML = `Internship Duration: March 10, 2025 to June 7, 2025<br>Role: IT Support Intern`;
+        document.getElementById("img-viewer").src = "resources/educations-and-experiences/tmi.jpg";
+        document.getElementById("educations-and-experiences-title").innerHTML = `IT Practicum: Toyota Makati, Inc. (TMI)`;
+        document.getElementById("educations-and-experiences-description").innerHTML = `Internship Duration: March 10, 2025 to June 7, 2025<br>Role: IT Support Intern`;
          
         return Sleep(750);
     }).then(() => {
         document.head.removeChild(imgViewer);
-        RemoveStyleEducationAndExperiencesDiv();
+        RemoveStyleEducationsAndExperiencesDiv();
     });
 }
 function ViewPlaceholder() {
-    EducationAndExperiences_IMGViewerSelectAnimation();
-    SelectedEducationAndExperiencesIcon("education-and-experiences-placeholder-icon");
+    EducationsAndExperiences_IMGViewerSelectAnimation();
+    SelectedEducationsAndExperiencesIcon("educations-and-experiences-placeholder-icon");
 
     Sleep([750]).then(() => {
-        document.getElementById("img-viewer").src = "resources/educations/education-and-experiences-placeholder.jpg";
-        document.getElementById("education-and-experiences-title").innerHTML = `Currently applying...`;
-        document.getElementById("education-and-experiences-description").innerHTML = `It could be your company here soon!`;
+        document.getElementById("img-viewer").src = "resources/educations-and-experiences/educations-and-experiences-placeholder.jpg";
+        document.getElementById("educations-and-experiences-title").innerHTML = `Currently applying...`;
+        document.getElementById("educations-and-experiences-description").innerHTML = `It could be your company here soon!`;
          
         return Sleep(750);
     }).then(() => {
         document.head.removeChild(imgViewer);
-        RemoveStyleEducationAndExperiencesDiv();
+        RemoveStyleEducationsAndExperiencesDiv();
     });
 }
-function EducationAndExperiences_IMGViewerSelectAnimation() {
+function EducationsAndExperiences_IMGViewerSelectAnimation() {
     Sleep([0]).then(() => {
         imgViewer.innerHTML =
         `
@@ -221,8 +221,8 @@ function EducationAndExperiences_IMGViewerSelectAnimation() {
         document.head.appendChild(imgViewer);
     }); 
 }
-function SelectedEducationAndExperiencesIcon(input) {
-    selectedEducationIcon.innerHTML = 
+function SelectedEducationsAndExperiencesIcon(input) {
+    selectedEducationsAndExperiencesIcon.innerHTML = 
     `
         #${input} {
             opacity: 1 !important;
@@ -234,16 +234,16 @@ function SelectedEducationAndExperiencesIcon(input) {
             opacity: 0.5 !important;
         }
     `;
-    document.head.appendChild(selectedEducationIcon); 
+    document.head.appendChild(selectedEducationsAndExperiencesIcon); 
 }
-function RemoveStyleEducationAndExperiencesDiv() {
-    document.querySelector("#sti-icon, #mcl-icon, #ojt-icon, #education-and-experiences-placeholder-icon, #nav-bar").addEventListener("click", function() {
+function RemoveStyleEducationsAndExperiencesDiv() {
+    document.querySelector("#sti-icon, #mcl-icon, #ojt-icon, #educations-and-experiences-placeholder-icon, #nav-bar").addEventListener("click", function() {
         try {
-            document.head.removeChild(selectedEducationIcon);
+            document.head.removeChild(selectedEducationsAndExperiencesIcon);
         }
         catch(err) {
             console.log("Error Message: " + err + "\n- Fix this some time. I don't get this part at all." +
-                "\n- I do get that this error msg shows up because there's no more existing [selectedEducationIcon]"
+                "\n- I do get that this error msg shows up because there's no more existing [selectedEducationsAndExperiencesIcon]"
             )
         }
     });

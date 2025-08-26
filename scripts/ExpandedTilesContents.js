@@ -49,7 +49,7 @@ const professionalDevelopmentDivContent =
                 <br>
                 (Certificate)
             </h2>
-            <img src="resources/certificates/system-administration-img.png" 
+            <img src="resources/professional-development/system-administration-img.png" 
             alt="system-administration-img">
         </div>
 
@@ -59,7 +59,7 @@ const professionalDevelopmentDivContent =
                 <br>
                 (Certificate)
             </h2>
-            <img src="resources/certificates/java-foundations-img.png" 
+            <img src="resources/professional-development/java-foundations-img.png" 
             alt="java-foundations-img"">
         </div>
 
@@ -67,11 +67,10 @@ const professionalDevelopmentDivContent =
             <h2>
                 Zuitt: Basic Web Development Workshop
                 <br>
-                (Certificate - Acquiring...)
+                (Certificate)
             </h2>
-            <img src="resources/certificates/certificate-img-placeholder.png" 
-            alt="Zuitt-Basic-Web-Development-Workshop-Certificate-img"
-            class="learning"">
+            <img src="resources/professional-development/zuitt-basic-web-development-workshop-certificate-img.png" 
+            alt="zuitt-basic-web-development-workshop-certificate-img">
         </div>
 
         <div class="sub-container add-border-radius-with-bg center-elements-inside">
@@ -135,12 +134,12 @@ const professionalDevelopmentDivContent =
     </style>
 `;
 
-// education-and-experiences-div
+// educations-and-experiences-div
 // Recheck this one.
-const educationAndExperiencesDivContent =
+const educationsAndExperiencesDivContent =
 `
     <h1 class="center-elements-inside">
-        Education & Experiences
+        Educations & Experiences
     </h1>
 
     <!-- 
@@ -150,29 +149,29 @@ const educationAndExperiencesDivContent =
     -->
     <div class="container center-elements-inside add-border-radius-with-bg">
         <div class="sub-container center-elements-inside" id="sub-container">
-            <h2 id="education-and-experiences-description">
+            <h2 id="educations-and-experiences-description">
                 Batch of 2021-2025 (Graduated)<br>Program: Bachelor of Science in Information Technology
             </h2>
-            <img src="resources/educations/sti.jpg" 
+            <img src="resources/educations-and-experiences/sti.jpg" 
             alt="sti-img"  id="img-viewer">
         </div>
 
-        <h2 id="education-and-experiences-title">
+        <h2 id="educations-and-experiences-title">
             College: STI College Santa Rosa
         </h2>
         
         <div class="options-icons" id="options-icons">
-            <img src="resources/educations/sti.jpg" 
+            <img src="resources/educations-and-experiences/sti.jpg" 
                 alt="sti-img" id="sti-icon" onclick="ViewSTICollege()">
 
-            <img src="resources/educations/mcl.png" 
+            <img src="resources/educations-and-experiences/mcl.png" 
                 alt="mcl-img" id="mcl-icon" onclick="ViewMCLCollege()">
 
-            <img src="resources/educations/tmi.jpg" 
+            <img src="resources/educations-and-experiences/tmi.jpg" 
                 alt="practicum-img" id="ojt-icon" onclick="ViewPracticum()">
 
-            <img src="resources/educations/education-and-experiences-placeholder.jpg" 
-            alt="education-and-experiences-placeholder-img" id="education-and-experiences-placeholder-icon" onclick="ViewPlaceholder()">
+            <img src="resources/educations-and-experiences/educations-and-experiences-placeholder.jpg" 
+            alt="educations-and-experiences-placeholder-img" id="educations-and-experiences-placeholder-icon" onclick="ViewPlaceholder()">
         </div>
     </div>
 
@@ -211,7 +210,7 @@ const educationAndExperiencesDivContent =
         .options-icons img:hover {
             transform: scale(1.15);
         }
-        #education-and-experiences-description {
+        #educations-and-experiences-description {
             position: absolute;
 
             text-align: center;
