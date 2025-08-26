@@ -77,11 +77,10 @@ const professionalDevelopmentDivContent =
             <h2>
                 Net Academy: Introduction to Cybersecurity
                 <br>
-                (Badge - Acquiring...)
+                (Badge)
             </h2>
             <img src="https://www.netacad.com/p/ff9e491c-49be-4734-803e-a79e6e83dab1/badges/badge-images/introduction_to_cybersecurity_16.png" 
-            alt="introduction-to-cybersecurity-badge-img"
-            class="learning"">
+            alt="introduction-to-cybersecurity-badge-img">
         </div>
 
         <div class="sub-container add-border-radius-with-bg center-elements-inside">
