@@ -7,8 +7,8 @@ const aboutMeDivContent =
     Who am I?
     </h1>
     <p>
-        Hi! I’m Euge Kyle Fabella, a passionate IT student currently pursuing a Bachelor of Science in Information Technology at 
-        STI Colleges of Santa Rosa City. I have a growing interest in system administration, network technologies, and software and web development, and 
+        Hi! I’m Euge Kyle Fabella, a passionate IT graduate in Bachelor of Science in Information Technology at 
+        STI Colleges of Santa Rosa City. I have a growing interest in system administration, technical support, network technologies, and web development; 
         I am eager to expand my knowledge and skills in these areas. With a strong dedication to learning, 
         I’m excited to explore the world of technology and contribute to meaningful solutions in the future.
     </p>
